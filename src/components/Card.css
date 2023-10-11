@@ -6,6 +6,25 @@
   font-size: 16pt;
 }
 
+.card-links {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.card-links a {
+  margin: 1rem 3rem;
+  text-decoration: solid;
+  padding: 1rem;
+  color: black;
+}
+
+.card-links a:hover {
+  background-color: rgba(144, 202, 249, 0.531);
+  border-radius: 10px;
+  color: rgb(128, 122, 122);
+}
+
 .image-container {
   position: relative;
   max-width: 450px;
