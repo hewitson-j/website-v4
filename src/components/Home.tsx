@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import ProfilePic from "../images/ProfilePic.jpg";
 import "./Home.css";
 
 export default function Home() {
@@ -24,7 +25,13 @@ export default function Home() {
             </Link>
           </button>
         </div>
-        <div className="home-pic"></div>
+        <div className="home-pic">
+          <img
+            id="profile-pic"
+            src={ProfilePic}
+            alt="Jacob's Profile Picture"
+          />
+        </div>
       </div>
     </>
   );
