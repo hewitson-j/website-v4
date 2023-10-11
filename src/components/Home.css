@@ -21,6 +21,8 @@
   border-radius: 10px;
   margin: 3rem;
   transition-duration: 0.3s;
+  font-weight: bold;
+  letter-spacing: 1px;
 }
 
 .home-project-link:hover {

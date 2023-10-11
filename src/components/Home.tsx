@@ -14,7 +14,7 @@ export default function Home() {
           </h2>
           <h2 className="home-description">
             <br />
-            I'm passionate about the apps I build.
+            I'm passionate about the quality apps I build.
             <br />
             Let's see what I can do for you.
           </h2>
