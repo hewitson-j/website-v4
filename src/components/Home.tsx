@@ -19,11 +19,10 @@ export default function Home() {
             Let's see what I can do for you.
           </h2>
           <br />
-          <button>
-            <Link to={"projects"} className="home-link">
-              See Projects
-            </Link>
-          </button>
+          <br />
+          <Link to={"projects"} className="home-project-link">
+            See Projects
+          </Link>
         </div>
         <div className="home-pic">
           <img

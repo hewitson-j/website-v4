@@ -10,24 +10,21 @@
   width: 50%;
 }
 
-.home-main button {
-  border: none;
-  border-radius: 5px;
-  padding: 1rem;
-  background-color: rgb(20, 13, 99);
-  margin: 0 25%;
-}
-
-.home-main button:hover {
-  background-color: rgb(10, 5, 60);
-}
-
-.home-link {
+.home-project-link {
   font-family: "Roboto", Arial, Helvetica, sans-serif;
   font-size: 16pt;
   margin: 0;
   text-decoration: none;
   color: white;
+  background-color: rgb(25, 15, 133);
+  padding: 1rem;
+  border-radius: 10px;
+  margin: 3rem;
+  transition-duration: 0.3s;
+}
+
+.home-project-link:hover {
+  background-color: rgb(10, 5, 60);
 }
 
 .home-description {
@@ -55,16 +52,16 @@
 
 @keyframes colorCycle {
   0% {
-    color: gold;
+    color: rgb(255, 132, 0);
   }
   33% {
     color: red;
   }
   66% {
-    color: blue;
+    color: rgb(194, 41, 138);
   }
   100% {
-    color: gold;
+    color: rgb(255, 132, 0);
   }
 }
 
