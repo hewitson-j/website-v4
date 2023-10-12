@@ -48,7 +48,9 @@ export default function Navbar() {
         <Link to={"projects"} className="nav-links">
           Projects
         </Link>
-        <p>Contact Me</p>
+        <Link to={"contact"} className="nav-links">
+          Contact
+        </Link>
       </div>
     </div>
   );
