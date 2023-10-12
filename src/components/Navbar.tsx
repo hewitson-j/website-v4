@@ -10,12 +10,13 @@ export default function Navbar() {
   return (
     <div className="navbar">
       <div className="icons">
-        <a href="mailto:jacob.a.hewitson@gmail.com">
+        <Link to={"contact"}>
           <EmailIcon
             className="icon"
             sx={{ color: "white", fontSize: "2rem" }}
           />
-        </a>
+        </Link>
+
         <a href="https://www.linkedin.com/in/jacob-hewitson-18b93321a/">
           <LinkedInIcon
             className="icon"

@@ -1,5 +1,6 @@
 {
   "name": "website-v4",
+  "homepage": "https://hewitson-j.github.io/website-v4",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -7,7 +8,8 @@
     "dev": "vite",
     "build": "tsc && vite build",
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "deploy": "npm run build && gh-pages -d dist"
   },
   "dependencies": {
     "@emotion/react": "^11.11.1",
@@ -15,6 +17,7 @@
     "@mui/icons-material": "^5.14.12",
     "@mui/material": "^5.14.13",
     "emailjs-com": "^3.2.0",
+    "gh-pages": "^6.0.0",
     "localforage": "^1.10.0",
     "match-sorter": "^6.3.1",
     "react": "^18.2.0",

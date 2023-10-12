@@ -11,9 +11,12 @@ export default function Contact() {
   const [backgroundColor, setBackgroundColor] = useState("");
   const [fontColor, setFontColor] = useState("");
   const [error, setError] = useState("");
+  const [buttonText, setButtonText] = useState("Send Email");
 
   const handleSubmit = (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault();
+
+    setButtonText("Sending...");
 
     const formElement = event.target as HTMLFormElement;
 
@@ -31,6 +34,7 @@ export default function Contact() {
           setMessage("Email sent successfully!");
           setBackgroundColor("#78fa85");
           setFontColor("#17661f");
+          setButtonText("Send Email");
 
           setTimeout(() => {
             setOpenDialogue(false);
@@ -43,6 +47,7 @@ export default function Contact() {
           setBackgroundColor("#d18282");
           setFontColor("#991212");
           setError(`Error: ${error}`);
+          setButtonText("Send Email");
 
           setTimeout(() => {
             setOpenDialogue(false);
@@ -91,7 +96,7 @@ export default function Contact() {
             placeholder="Message (Required)"
           />
           <br />
-          <input type="submit" id="button" value="Send Email" />
+          <input type="submit" id="button" value={buttonText} />
         </form>
         <br />
         <br />
