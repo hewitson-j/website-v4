@@ -1,0 +1,48 @@
+.navbar-menu {
+  background-color: hsla(0, 0%, 0%, 0.5);
+}
+
+.mobile-nav-links {
+  padding: 0.5rem;
+  margin: 0;
+  text-decoration: none;
+  color: white;
+}
+
+.mobile-nav-links:hover {
+  background-color: rgba(144, 202, 249, 0.531);
+  border-radius: 5px;
+  padding: 0.5rem;
+  transition: background-color 0.2s ease-in-out, padding 0.2s ease-in-out;
+}
+
+.mobile-hr {
+  width: 70%;
+  margin: 1rem auto;
+}
+
+.mobile-nav-icons {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: start;
+  width: 120px;
+  padding: 2rem;
+  margin: auto;
+  height: 300px;
+}
+
+.icon-links {
+  text-decoration: none;
+  color: white;
+  align-items: center;
+  display: flex;
+  align-items: center;
+}
+
+.icon-links:hover {
+  background-color: rgba(144, 202, 249, 0.531);
+  border-radius: 50px;
+  padding: 0.5rem;
+  transition: background-color 0.2s ease-in-out, padding 0.2s ease-in-out;
+}
