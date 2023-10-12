@@ -10,4 +10,26 @@
 
 .form-fields {
   margin: 0.5rem 0;
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
+  width: 90%;
+  height: 2rem;
+  font-size: 14pt;
+}
+
+#message {
+  height: 10rem;
+}
+
+#button {
+  background-color: rgb(10, 5, 60);
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 16pt;
+  padding: 1rem;
+}
+
+#button:hover {
+  background-color: rgb(7, 4, 37);
+  color: rgb(165, 165, 165);
 }
