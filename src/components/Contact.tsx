@@ -2,6 +2,7 @@ import emailjs from "emailjs-com";
 import "./Contact.css";
 import { FormEvent, useState } from "react";
 import EmailDialogue from "./EmailDialogue";
+import Copyright from "./Copyright";
 
 emailjs.init("service_usm4a2p");
 
@@ -109,6 +110,7 @@ export default function Contact() {
           />
         )}
       </div>
+      <Copyright margin="1rem auto 1rem" />
     </>
   );
 }

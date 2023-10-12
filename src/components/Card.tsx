@@ -37,7 +37,14 @@ export default function Card({
         <div className="details">
           <p>{description}</p>
           <div className="card-links">
-            {link && <a href={link}>See App</a>} <a href={github}>Github</a>
+            {link && (
+              <a href={link}>
+                <b>See App</b>
+              </a>
+            )}{" "}
+            <a href={github}>
+              <b>Github</b>
+            </a>
           </div>
         </div>
       </div>

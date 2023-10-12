@@ -14,7 +14,7 @@
 
 .card-links a {
   margin: 1rem 3rem;
-  text-decoration: solid;
+  text-decoration: underline;
   padding: 1rem;
   color: black;
 }
@@ -56,7 +56,12 @@
   opacity: 0;
   transition: opacity 0.3s;
   color: black;
-  font-size: 20pt;
+  font-size: 18pt;
+}
+
+.details p {
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
 }
 
 .image-container:hover .details {
@@ -70,4 +75,13 @@
 .details a {
   text-decoration: none;
   color: #333;
+}
+
+@media only screen and (max-width: 600px) {
+  .details {
+    font-size: 12pt;
+  }
+  .card-links a {
+    margin: 0 3rem;
+  }
 }

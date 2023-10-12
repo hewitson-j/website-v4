@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import ProfilePic from "../images/ProfilePic.jpg";
 import "./Home.css";
+import Copyright from "./Copyright";
 
 export default function Home() {
   return (
@@ -32,6 +33,7 @@ export default function Home() {
           />
         </div>
       </div>
+      <Copyright margin="7rem auto 1rem" />
     </>
   );
 }
