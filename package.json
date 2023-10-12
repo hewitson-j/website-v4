@@ -1,8 +1,8 @@
 {
   "name": "website-v4",
-  "homepage": "https://hewitson-j.github.io/website-v4",
+  "homepage": "https://jacobhewitson.com",
   "private": true,
-  "version": "0.0.0",
+  "version": "4.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
