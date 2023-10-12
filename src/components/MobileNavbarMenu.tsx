@@ -43,6 +43,7 @@ export default function MobileNavbarMenu({
         <a
           href="https://www.linkedin.com/in/jacob-hewitson-18b93321a/"
           className="icon-links"
+          target="_blank"
         >
           <LinkedInIcon
             className="mobile-icon"
@@ -50,7 +51,11 @@ export default function MobileNavbarMenu({
           />{" "}
           LinkedIn
         </a>
-        <a href="https://github.com/hewitson-j" className="icon-links">
+        <a
+          href="https://github.com/hewitson-j"
+          className="icon-links"
+          target="_blank"
+        >
           <GitHubIcon
             className="mobile-icon"
             sx={{ color: "white", fontSize: "2rem" }}
@@ -60,6 +65,7 @@ export default function MobileNavbarMenu({
         <a
           href="https://www.facebook.com/jake.hewitson.31"
           className="icon-links"
+          target="_blank"
         >
           <FacebookIcon
             className="mobile-icon"
@@ -70,6 +76,7 @@ export default function MobileNavbarMenu({
         <a
           href="https://www.instagram.com/the_man_hewi/"
           className="icon-links"
+          target="_blank"
         >
           <InstagramIcon
             className="mobile-icon"

@@ -17,25 +17,28 @@ export default function Navbar() {
           />
         </Link>
 
-        <a href="https://www.linkedin.com/in/jacob-hewitson-18b93321a/">
+        <a
+          href="https://www.linkedin.com/in/jacob-hewitson-18b93321a/"
+          target="_blank"
+        >
           <LinkedInIcon
             className="icon"
             sx={{ color: "white", fontSize: "2rem" }}
           />
         </a>
-        <a href="https://github.com/hewitson-j">
+        <a href="https://github.com/hewitson-j" target="_blank">
           <GitHubIcon
             className="icon"
             sx={{ color: "white", fontSize: "2rem" }}
           />
         </a>
-        <a href="https://www.facebook.com/jake.hewitson.31">
+        <a href="https://www.facebook.com/jake.hewitson.31" target="_blank">
           <FacebookIcon
             className="icon"
             sx={{ color: "white", fontSize: "2rem" }}
           />
         </a>
-        <a href="https://www.instagram.com/the_man_hewi/">
+        <a href="https://www.instagram.com/the_man_hewi/" target="_blank">
           <InstagramIcon
             className="icon"
             sx={{ color: "white", fontSize: "2rem" }}

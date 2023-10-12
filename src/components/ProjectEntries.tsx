@@ -36,7 +36,7 @@ const projectEntries = [
       "Created with Java, JavaFX, MySQL, and JDBC. It allows for users to create, delete, and update appointment and customer records. It has a secure login in English and French.",
     image: "/Software-2.jpg",
     alt: "Appointment Tracker App Image",
-    github: "https://github.com/hewitson-j/leaps-and-bounds/",
+    github: "https://github.com/hewitson-j",
   },
 ];
 
