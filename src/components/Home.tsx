@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import ProfilePic from "../images/ProfilePic.jpg";
+import Profile from "../images/ProfilePic.jpg";
 import "./Home.css";
 import Copyright from "./Copyright";
 
@@ -26,11 +26,7 @@ export default function Home() {
           </Link>
         </div>
         <div className="home-pic">
-          <img
-            id="profile-pic"
-            src={ProfilePic}
-            alt="Jacob's Profile Picture"
-          />
+          <img id="profile-pic" src={Profile} alt="Jacob's Profile Picture" />
         </div>
       </div>
       <Copyright margin="7rem auto 1rem" />
