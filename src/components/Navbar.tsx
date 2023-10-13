@@ -10,7 +10,7 @@ export default function Navbar() {
   return (
     <div className="navbar">
       <div className="icons">
-        <Link to={"contact"}>
+        <Link title="Contact Page" to={"contact"}>
           <EmailIcon
             className="icon"
             sx={{ color: "white", fontSize: "2rem" }}
@@ -20,25 +20,38 @@ export default function Navbar() {
         <a
           href="https://www.linkedin.com/in/jacob-hewitson-18b93321a/"
           target="_blank"
+          title="LinkedIn Profile"
         >
           <LinkedInIcon
             className="icon"
             sx={{ color: "white", fontSize: "2rem" }}
           />
         </a>
-        <a href="https://github.com/hewitson-j" target="_blank">
+        <a
+          href="https://github.com/hewitson-j"
+          target="_blank"
+          title="GitHub Profile"
+        >
           <GitHubIcon
             className="icon"
             sx={{ color: "white", fontSize: "2rem" }}
           />
         </a>
-        <a href="https://www.facebook.com/jake.hewitson.31" target="_blank">
+        <a
+          href="https://www.facebook.com/jake.hewitson.31"
+          target="_blank"
+          title="Facebook Profile"
+        >
           <FacebookIcon
             className="icon"
             sx={{ color: "white", fontSize: "2rem" }}
           />
         </a>
-        <a href="https://www.instagram.com/the_man_hewi/" target="_blank">
+        <a
+          href="https://www.instagram.com/the_man_hewi/"
+          target="_blank"
+          title="Instagram Profile"
+        >
           <InstagramIcon
             className="icon"
             sx={{ color: "white", fontSize: "2rem" }}

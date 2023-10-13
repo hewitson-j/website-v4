@@ -32,7 +32,12 @@ export default function MobileNavbarMenu({
       <hr className="mobile-hr" />
 
       <div className="mobile-nav-icons">
-        <Link to={"contact"} className="icon-links" onClick={handler}>
+        <Link
+          to={"contact"}
+          className="icon-links"
+          onClick={handler}
+          title="Contact Page"
+        >
           <EmailIcon
             className="mobile-icon"
             sx={{ color: "white", fontSize: "2rem" }}
@@ -44,6 +49,7 @@ export default function MobileNavbarMenu({
           href="https://www.linkedin.com/in/jacob-hewitson-18b93321a/"
           className="icon-links"
           target="_blank"
+          title="LinkedIn Profile"
         >
           <LinkedInIcon
             className="mobile-icon"
@@ -55,17 +61,19 @@ export default function MobileNavbarMenu({
           href="https://github.com/hewitson-j"
           className="icon-links"
           target="_blank"
+          title="GitHub Profile"
         >
           <GitHubIcon
             className="mobile-icon"
             sx={{ color: "white", fontSize: "2rem" }}
           />{" "}
-          Github
+          GitHub
         </a>
         <a
           href="https://www.facebook.com/jake.hewitson.31"
           className="icon-links"
           target="_blank"
+          title="Facebook Profile"
         >
           <FacebookIcon
             className="mobile-icon"
@@ -77,6 +85,7 @@ export default function MobileNavbarMenu({
           href="https://www.instagram.com/the_man_hewi/"
           className="icon-links"
           target="_blank"
+          title="Instagram Profile"
         >
           <InstagramIcon
             className="mobile-icon"
