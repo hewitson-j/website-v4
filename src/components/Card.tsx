@@ -23,7 +23,7 @@ export default function Card({
 
   return (
     <div className="card-body">
-      <h3>{title}</h3>
+      <h3 id="card-header">{title}</h3>
       <div
         className={`image-container ${hovered ? "hovered" : ""}`}
         onMouseEnter={() => {

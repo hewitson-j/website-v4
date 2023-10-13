@@ -6,6 +6,10 @@
   font-size: 16pt;
 }
 
+.card-header {
+  text-wrap: wrap;
+}
+
 .card-links {
   display: flex;
   flex-direction: row;

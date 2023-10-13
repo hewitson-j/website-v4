@@ -21,7 +21,7 @@ const projectEntries = [
   },
   {
     id: "2",
-    title: "LeapsandBoundsPreK.com",
+    title: "Leaps and Bounds Preschool Website",
     description:
       "Created for a client, this website was made in React using Bootstrap and Material UI.",
     image: "/leapsandbounds.jpg",
