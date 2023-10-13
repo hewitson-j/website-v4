@@ -6,3 +6,16 @@ body {
   background-color: rgb(16, 17, 25);
   color: white;
 }
+
+::-webkit-scrollbar {
+  width: 15px;
+}
+::-webkit-scrollbar-track {
+  background: #868686;
+}
+::-webkit-scrollbar-thumb {
+  background: #515151;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #434343;
+}

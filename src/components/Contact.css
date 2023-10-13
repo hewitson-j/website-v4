@@ -39,3 +39,10 @@
   background-color: rgb(7, 4, 37);
   color: rgb(165, 165, 165);
 }
+
+#message::-webkit-scrollbar-track {
+  border-radius: 10px;
+}
+#message::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+}
