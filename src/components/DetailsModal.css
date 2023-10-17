@@ -1,0 +1,19 @@
+.modal-links {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.modal-links a {
+  margin: 1rem 3rem;
+  text-decoration: underline;
+  padding: 1rem;
+  color: black;
+  border-radius: 10px;
+}
+
+.modal-links a:hover {
+  background-color: rgba(144, 202, 249, 0.531);
+  color: rgb(128, 122, 122);
+  transition-duration: 0.5s;
+}

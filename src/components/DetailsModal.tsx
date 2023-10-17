@@ -4,13 +4,15 @@ import Modal from "@mui/material/Modal";
 import Fade from "@mui/material/Fade";
 import Typography from "@mui/material/Typography";
 
+import "./DetailsModal.css";
+
 const style = {
   position: "absolute",
   color: "black",
   top: "50%",
   left: "50%",
   transform: "translate(-50%, -50%)",
-  width: 400,
+  width: 600,
   bgcolor: "background.paper",
   border: "2px solid #000",
   boxShadow: 24,
@@ -23,6 +25,7 @@ interface DetailsModalProps {
   title: string;
   github: string;
   link?: string;
+  longDescription: string;
 }
 
 export default function DetailsModal({
@@ -31,6 +34,7 @@ export default function DetailsModal({
   title,
   github,
   link,
+  longDescription,
 }: DetailsModalProps) {
   return (
     <div>
@@ -53,11 +57,17 @@ export default function DetailsModal({
               {title}
             </Typography>
             <Typography id="transition-modal-description" sx={{ mt: 2 }}>
-              Duis mollis, est non commodo luctus, nisi erat porttitor ligula.
+              {longDescription}
             </Typography>
-            <div style={{ display: "flex", justifyContent: "space-evenly" }}>
-              <a href={github}>GitHub</a>
-              {link && <a href={link}>See App</a>}
+            <div className="modal-links">
+              <a href={github} target="_blank">
+                GitHub
+              </a>
+              {link && (
+                <a href={link} target="_blank">
+                  See App
+                </a>
+              )}
             </div>
           </Box>
         </Fade>

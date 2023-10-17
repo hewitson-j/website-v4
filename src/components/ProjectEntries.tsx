@@ -4,9 +4,11 @@ const projectEntries = [
     title: "Case Notes App",
     description:
       "Created voluntarily for my employer in React, JSON, Javascript, and Bootstrap. It followed stakeholder constraints and reduced agent call time by 4 minutes.",
+    longDescription:
+      "This application was created as a project for one of my employers. Call center agents were having issues meeting their SLA expectations due to long note-taking time. I worked with my manager and our department head to create an application which hold templates of notes for common requests from customers. The product was made according to stakeholder requirements. Once deployed, the app saved an average of 4 minutes per call over the next 6 months, bringing average call time within SLA requirments.",
+    technologies: ["react", "bootstrap", "javascript", "json", "material-ui"],
     image: "/CaseNotes.jpg",
     alt: "Case Notes App",
-    link: "https://hewitson-j.github.io/CaseNotesLibrary/Home.html",
     github: "https://github.com/hewitson-j/react-calculator/",
   },
   {

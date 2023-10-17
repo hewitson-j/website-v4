@@ -7,6 +7,7 @@ interface CardProps {
   id?: string;
   title?: string;
   description?: string;
+  longDescription?: string;
   image?: string;
   alt?: string;
   link?: string;
@@ -18,6 +19,7 @@ export default function Card({
   description = "Default Description",
   image = "https://t3.ftcdn.net/jpg/01/62/06/40/360_F_162064034_HI2YEgV7km3HMy0rccQczKH2vvpI4OnB.jpg",
   alt = "Alt",
+  longDescription = "This is the default for the Project Description.",
   link,
   github = "http://github.com/hewitson-j",
 }: CardProps) {
@@ -58,6 +60,7 @@ export default function Card({
             title={title}
             github={github}
             link={link}
+            longDescription={longDescription}
           />
         </div>
       </div>
