@@ -1,5 +1,7 @@
 import { useState } from "react";
 import "./Card.css";
+import { Button } from "@mui/material";
+import DetailsModal from "./DetailsModal";
 
 interface CardProps {
   id?: string;
@@ -20,6 +22,11 @@ export default function Card({
   github = "http://github.com/hewitson-j",
 }: CardProps) {
   const [hovered, setHovered] = useState(false);
+  const [modalOpen, setModalOpen] = useState(false);
+
+  const handleIsOpen = () => {
+    setModalOpen(!modalOpen);
+  };
 
   return (
     <div className="card-body">
@@ -36,16 +43,22 @@ export default function Card({
         <img className="card-image" src={image} alt={alt} />
         <div className="details">
           <p>{description}</p>
-          <div className="card-links">
-            {link && (
-              <a href={link} target="_blank">
-                <b>See App</b>
-              </a>
-            )}{" "}
-            <a href={github} target="_blank">
-              <b>Github</b>
-            </a>
+          <div id="modal-link">
+            <Button
+              variant="text"
+              onClick={handleIsOpen}
+              sx={{ color: "black", margin: "1rem", fontSize: "12pt" }}
+            >
+              See More
+            </Button>
           </div>
+          <DetailsModal
+            isOpen={modalOpen}
+            handleIsOpen={handleIsOpen}
+            title={title}
+            github={github}
+            link={link}
+          />
         </div>
       </div>
     </div>
