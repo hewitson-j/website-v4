@@ -3,18 +3,34 @@ import Box from "@mui/material/Box";
 import Modal from "@mui/material/Modal";
 import Fade from "@mui/material/Fade";
 import Typography from "@mui/material/Typography";
+import CloseIcon from "@mui/icons-material/Close";
+
+import cssImage from "../images/css.png";
+import javaImage from "../images/Java.png";
+import javafxImage from "../images/javafx.png";
+import jsImage from "../images/JavaScript.png";
+import htmlImage from "../images/html.png";
+import jdbcImage from "../images/JDBC.jpg";
+import jsonImage from "../images/json.png";
+import muiImage from "../images/mui.png";
+import mysqlImage from "../images/mysql.png";
+import pythonImage from "../images/python.png";
+import reactImage from "../images/react.png";
+import bootstrapImage from "../images/bootstrap-logo.svg";
+import githubImage from "../images/github.png";
 
 import "./DetailsModal.css";
+import { Button, Grid } from "@mui/material";
 
 const style = {
   position: "absolute",
-  color: "black",
+  color: "white",
   top: "50%",
   left: "50%",
   transform: "translate(-50%, -50%)",
-  width: 600,
-  bgcolor: "background.paper",
-  border: "2px solid #000",
+  width: "60%",
+  backgroundColor: "rgb(51, 51, 51)",
+  borderRadius: "10px",
   boxShadow: 24,
   p: 4,
 };
@@ -25,6 +41,7 @@ interface DetailsModalProps {
   title: string;
   github: string;
   link?: string;
+  technologies?: string[];
   longDescription: string;
 }
 
@@ -35,7 +52,41 @@ export default function DetailsModal({
   github,
   link,
   longDescription,
+  technologies,
 }: DetailsModalProps) {
+  const getImageForTechnology = (technology: string) => {
+    switch (technology.toLowerCase()) {
+      case "react":
+        return reactImage;
+      case "javascript":
+        return jsImage;
+      case "json":
+        return jsonImage;
+      case "material-ui":
+        return muiImage;
+      case "css":
+        return cssImage;
+      case "html":
+        return htmlImage;
+      case "java":
+        return javaImage;
+      case "javafx":
+        return javafxImage;
+      case "jdbc":
+        return jdbcImage;
+      case "python":
+        return pythonImage;
+      case "mysql":
+        return mysqlImage;
+      case "bootstrap":
+        return bootstrapImage;
+      case "github":
+        return githubImage;
+      default:
+        return;
+    }
+  };
+
   return (
     <div>
       <Modal
@@ -53,12 +104,47 @@ export default function DetailsModal({
       >
         <Fade in={isOpen}>
           <Box sx={style}>
-            <Typography id="transition-modal-title" variant="h6" component="h2">
-              {title}
-            </Typography>
+            <Grid container>
+              <Grid item xs={1} />
+              <Grid item xs={10}>
+                <Typography
+                  id="transition-modal-title"
+                  variant="h5"
+                  component="h2"
+                >
+                  {title}
+                </Typography>
+              </Grid>
+              <Grid item xs={1}>
+                <Button onClick={handleIsOpen}>
+                  <CloseIcon sx={{ color: "white" }} />
+                </Button>
+              </Grid>
+            </Grid>
+
             <Typography id="transition-modal-description" sx={{ mt: 2 }}>
               {longDescription}
             </Typography>
+            <br />
+            {technologies && (
+              <Typography variant="h6">Technologies used: </Typography>
+            )}
+            <div className="modal-images-body">
+              {technologies && (
+                <>
+                  {technologies.map((technology, index) => (
+                    <img
+                      className="modal-images"
+                      key={index}
+                      src={getImageForTechnology(technology)}
+                      alt={technology}
+                      title={technology}
+                    />
+                  ))}
+                </>
+              )}
+            </div>
+            <Typography variant="h6">Links:</Typography>
             <div className="modal-links">
               <a href={github} target="_blank">
                 GitHub

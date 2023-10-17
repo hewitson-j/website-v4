@@ -19,6 +19,7 @@ export default function Projects() {
               alt={entry.alt}
               image={entry.image}
               longDescription={entry.longDescription}
+              technologies={entry.technologies}
             />
           </Grid>
         ))}

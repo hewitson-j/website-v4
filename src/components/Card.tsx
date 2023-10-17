@@ -12,6 +12,7 @@ interface CardProps {
   alt?: string;
   link?: string;
   github?: string;
+  technologies?: string[]
 }
 
 export default function Card({
@@ -21,6 +22,7 @@ export default function Card({
   alt = "Alt",
   longDescription = "This is the default for the Project Description.",
   link,
+  technologies,
   github = "http://github.com/hewitson-j",
 }: CardProps) {
   const [hovered, setHovered] = useState(false);
@@ -61,6 +63,7 @@ export default function Card({
             github={github}
             link={link}
             longDescription={longDescription}
+            technologies={technologies}
           />
         </div>
       </div>
