@@ -28,7 +28,7 @@ const style = {
   top: "50%",
   left: "50%",
   transform: "translate(-50%, -50%)",
-  width: "60%",
+  width: "70%",
   backgroundColor: "rgb(51, 51, 51)",
   borderRadius: "10px",
   boxShadow: 24,
@@ -121,39 +121,40 @@ export default function DetailsModal({
                 </Button>
               </Grid>
             </Grid>
-
-            <Typography id="transition-modal-description" sx={{ mt: 2 }}>
-              {longDescription}
-            </Typography>
-            <br />
-            {technologies && (
-              <Typography variant="h6">Technologies used: </Typography>
-            )}
-            <div className="modal-images-body">
+            <div className="modal-content">
+              <Typography id="transition-modal-description" sx={{ mt: 2 }}>
+                {longDescription}
+              </Typography>
+              <br />
               {technologies && (
-                <>
-                  {technologies.map((technology, index) => (
-                    <img
-                      className="modal-images"
-                      key={index}
-                      src={getImageForTechnology(technology)}
-                      alt={technology}
-                      title={technology}
-                    />
-                  ))}
-                </>
+                <Typography variant="h6">Technologies used: </Typography>
               )}
-            </div>
-            <Typography variant="h6">Links:</Typography>
-            <div className="modal-links">
-              <a href={github} target="_blank">
-                GitHub
-              </a>
-              {link && (
-                <a href={link} target="_blank">
-                  See App
+              <div className="modal-images-body">
+                {technologies && (
+                  <>
+                    {technologies.map((technology, index) => (
+                      <img
+                        className="modal-images"
+                        key={index}
+                        src={getImageForTechnology(technology)}
+                        alt={technology}
+                        title={technology}
+                      />
+                    ))}
+                  </>
+                )}
+              </div>
+              <Typography variant="h6">Links:</Typography>
+              <div className="modal-links">
+                <a href={github} target="_blank">
+                  GitHub
                 </a>
-              )}
+                {link && (
+                  <a href={link} target="_blank">
+                    See App
+                  </a>
+                )}
+              </div>
             </div>
           </Box>
         </Fade>
