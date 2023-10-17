@@ -50,7 +50,7 @@ const projectEntries = [
     description:
       "Created with Java, JavaFX, MySQL, and JDBC. It allows for users to create, delete, and update appointment and customer records. It has a secure login in English and French.",
     longDescription:
-      "This application was created in my Software II class in university. The requirements for this project were to create an application which would register clients and appointments for a business. Appointment times were required to update according to the user's local timezone. It was also required to have a secure login page where only authorized accounts were able to log in. It was also required to have the app automatically translate its text to French depending on user language settings. \n\nThe was created according to the course requirements using Java, JavaFX for UI, SQL to store data, and a Java Database Connector API",
+      "This application was created in my Software II class in university. The requirements for this project were to create an application which would register clients and appointments for a business. Appointment times were required to update according to the user's local timezone. It was also required to have a secure login page where only authorized accounts were able to log in. It was also required to have the app automatically translate its text to French depending on user language settings. Finally, it was required to generate reports on number of appointments by day, by month, and by customer. The was created according to the course requirements using Java, JavaFX for UI, SQL to store data, and a Java Database Connector API.",
     technologies: ["Java", "JavaFX", "JDBC", "MySql"],
     image: "/Software-2.jpg",
     alt: "Appointment Tracker App Image",
