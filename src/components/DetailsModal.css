@@ -1,3 +1,9 @@
+.modal-content {
+  max-height: 80vh;
+  overflow-y: auto;
+  margin: 0;
+}
+
 .modal-links {
   display: flex;
   flex-direction: row;
