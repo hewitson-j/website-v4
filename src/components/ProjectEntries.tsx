@@ -56,6 +56,19 @@ const projectEntries = [
     alt: "Appointment Tracker App Image",
     github: "https://github.com/hewitson-j",
   },
+  {
+    id: "4",
+    title: "To-Do List",
+    description:
+      "A browser-based to-do list app requested by a client which allows users to add, complete, delete, and modify tasks.",
+    longDescription:
+      "Requested by a client, this app allows users to create, modify, delete task entries and mark them as completed. This is a browser-based application which saves task data in browser local storage rather than a database according to client requirements. Users can add in pertinent details to the task entry such as title, description, associated project, due date, when to remind about the task, etc. The app alerts users to past due and currently due tasks.",
+    technologies: ["react", "javascript", "GitHub", "material-ui"],
+    image: "/TodoList.jpg",
+    alt: "To-Do List App",
+    link: "http://hewitson-j.github.io/new-todo-list/",
+    github: "https://github.com/hewitson-j/new-todo-list/",
+  },
 ];
 
 export default projectEntries;
