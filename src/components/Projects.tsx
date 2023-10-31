@@ -8,7 +8,7 @@ export default function Projects() {
   return (
     <div className="project-body">
       <h1 className="projects-header">Featured Projects</h1>
-      <Grid container spacing={2}>
+      <Grid container spacing={2} sx={{ maxWidth: "1200px", margin: "auto" }}>
         {projectEntries.map((entry) => (
           <Grid item xs={12} md={6} key={entry.id}>
             <Card
