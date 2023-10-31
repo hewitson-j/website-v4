@@ -1,8 +1,9 @@
 .home-main {
-  margin: 5%;
+  margin: 5% auto;
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
+  max-width: 1500px;
 }
 
 .home-text {

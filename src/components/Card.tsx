@@ -12,7 +12,7 @@ interface CardProps {
   alt?: string;
   link?: string;
   github?: string;
-  technologies?: string[]
+  technologies?: string[];
 }
 
 export default function Card({
