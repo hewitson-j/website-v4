@@ -5,7 +5,7 @@ import Copyright from "./Copyright";
 
 export default function Home() {
   return (
-    <>
+    <div className="home">
       <div className="home-main">
         <div className="home-text">
           <h1 id="home-intro-text">I'm Jacob, nice to meet you.</h1>
@@ -30,6 +30,6 @@ export default function Home() {
         </div>
       </div>
       <Copyright margin="7rem auto 1rem" />
-    </>
+    </div>
   );
 }

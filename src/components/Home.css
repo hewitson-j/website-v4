@@ -1,3 +1,7 @@
+.home {
+  margin: 0 10%;
+}
+
 .home-main {
   margin: 5% auto;
   display: flex;
@@ -49,9 +53,9 @@
 }
 
 #profile-pic {
-  width: 60%;
+  width: 70%;
   border-radius: 500px;
-  margin: 1%;
+  margin: auto;
 }
 
 @keyframes colorCycle {
