@@ -9,7 +9,7 @@ const projectEntries = [
     technologies: ["react", "bootstrap", "javascript", "json", "material-ui"],
     image: "/CaseNotes.jpg",
     alt: "Case Notes App",
-    github: "https://github.com/hewitson-j/react-calculator/",
+    github: "https://github.com/hewitson-j/case-notes-library/",
   },
   {
     id: "1",
