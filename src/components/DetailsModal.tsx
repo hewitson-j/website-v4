@@ -11,13 +11,15 @@ import javafxImage from "../images/javafx.png";
 import jsImage from "../images/JavaScript.png";
 import htmlImage from "../images/html.png";
 import jdbcImage from "../images/JDBC.jpg";
-import jsonImage from "../images/json.png";
 import muiImage from "../images/mui.png";
 import mysqlImage from "../images/mysql.png";
 import pythonImage from "../images/python.png";
 import reactImage from "../images/react.png";
 import bootstrapImage from "../images/bootstrap-logo.svg";
+import typescriptImage from "../images/TypeScript.png";
 import githubImage from "../images/github.png";
+import postgresImage from "../images/postgres.png";
+import supabaseImage from "../images/supabase.png";
 
 import "./DetailsModal.css";
 import { Button, Grid } from "@mui/material";
@@ -60,8 +62,6 @@ export default function DetailsModal({
         return reactImage;
       case "javascript":
         return jsImage;
-      case "json":
-        return jsonImage;
       case "material-ui":
         return muiImage;
       case "css":
@@ -82,6 +82,12 @@ export default function DetailsModal({
         return bootstrapImage;
       case "github":
         return githubImage;
+      case "typescript":
+        return typescriptImage;
+      case "postgres":
+        return postgresImage;
+      case "supabase":
+        return supabaseImage;
       default:
         return;
     }
