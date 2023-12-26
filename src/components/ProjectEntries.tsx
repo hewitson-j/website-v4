@@ -41,7 +41,7 @@ const projectEntries = [
     ],
     image: "/MineGrinder.jpg",
     alt: "Mine Grinder",
-    link: "https://minegrinder.com",
+    link: "http://minegrinder.com",
     github: "https://github.com/hewitson-j/mine-grinder-new/",
   },
   {
