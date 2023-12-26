@@ -25,6 +25,26 @@ const projectEntries = [
     github: "https://github.com/hewitson-j/leaps-and-bounds/",
   },
   {
+    id: "6",
+    title: "Mine Grinder Website",
+    description:
+      "Created for a client to market his new book, this website was made in React and TypeScript.",
+    longDescription:
+      "A client contacted me requesting a website for the release of their book. Originally I created the website using vanilla Javascript, HTML, and CSS, but as a duty of maintaining the site I rebuilt it using React, TypeScript, and several other technologies. The website is a single-page web application which was hosted on GitHub pages. The client purchased the domain from GoDaddy and I configured it for deployment.. After deployment the website increased demand for the client's book by 50%. ",
+    technologies: [
+      "React",
+      "typescript",
+      "GitHub",
+      "Javascript",
+      "HTML",
+      "CSS",
+    ],
+    image: "/MineGrinder.jpg",
+    alt: "Mine Grinder",
+    link: "https://minegrinder.com",
+    github: "https://github.com/hewitson-j/mine-grinder-new/",
+  },
+  {
     id: "2",
     title: "To-Do List",
     description:
