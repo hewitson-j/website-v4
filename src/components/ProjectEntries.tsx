@@ -85,6 +85,26 @@ const projectEntries = [
     github: "https://github.com/hewitson-j/pokedex/",
   },
   {
+    id: "7",
+    title: "Memory Library",
+    description:
+      "A web app utilizing a hosted database which allows users to look through family photo albums and scrapbooks.",
+    longDescription:
+      "I go to visit my grandparents fairly frequently and over the years they've taken many photos and made tons of scrapbooks. My grandmother is proud of the work she's done but felt a little bit sad that when she and my grandfather pass away there might not be any interest in our family to keep the scrapbooks or that if there is we will all be in different places as people grow in their careers and move away from home. I got to thinking how would we be able to make it so that anyone interested could see family photos and memories and came up with the idea to make a repository where anyone in the family could go online and pull up the pictures in a photo library. I developed an app called the Memory Library where members of my family could do just that. The app allows users to go in and look at scanned photo albums. I implemented a Postgres Database and storage hosted on Supabase. The app uses the Supabase API to make queries and manage authentication for users so that the images are secure and random people or bad actors can't access our data. The frontend and UI are hosted on GitHub Pages.",
+    technologies: [
+      "react",
+      "typescript",
+      "GitHub",
+      "css",
+      "supabase",
+      "postgres",
+    ],
+    image: "/MemoryLibrary.jpg",
+    alt: "Memory Library",
+    link: "http://hewitson-j.github.io/memory-repository/",
+    github: "https://github.com/hewitson-j/memory-repository/",
+  },
+  {
     id: "4",
     title: "React Calculator",
     description:
