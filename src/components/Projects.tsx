@@ -1,7 +1,7 @@
 import { Grid } from "@mui/material";
 import "./Projects.css";
 import Card from "./Card";
-import projectEntries from "./ProjectEntries";
+import { projectEntries } from "./ProjectEntries";
 import Copyright from "./Copyright";
 
 export default function Projects() {
