@@ -1,15 +1,57 @@
 import { Grid } from "@mui/material";
 import "./Projects.css";
 import Card from "./Card";
-import { projectEntries } from "./ProjectEntries";
+import {
+  portfolioProjectEntries,
+  professionalProjectEntries,
+  allProjectEntries,
+  featuredProjects,
+} from "./ProjectEntries";
 import Copyright from "./Copyright";
+import { useState } from "react";
+
+import ArrowLeftIcon from "@mui/icons-material/ArrowLeft";
+import ArrowRightIcon from "@mui/icons-material/ArrowRight";
 
 export default function Projects() {
+  const projectsArray = [
+    { array: featuredProjects, title: "Featured Projects" },
+    { array: allProjectEntries, title: "All Projects" },
+    { array: professionalProjectEntries, title: "Professional Projects" },
+    { array: portfolioProjectEntries, title: "Portfolio Projects" },
+  ];
+
+  const [projectArrayIndex, setProjectArrayIndex] = useState(0);
+
+  const handleLeft = () => {
+    if (projectArrayIndex === 0) {
+      setProjectArrayIndex(projectsArray.length - 1);
+    } else {
+      setProjectArrayIndex(projectArrayIndex - 1);
+    }
+  };
+
+  const handleRight = () => {
+    if (projectArrayIndex === projectsArray.length - 1) {
+      setProjectArrayIndex(0);
+    } else {
+      setProjectArrayIndex(projectArrayIndex + 1);
+    }
+  };
+
   return (
     <div className="project-body">
-      <h1 className="projects-header">Featured Projects</h1>
+      <div className="projects-header">
+        <button onClick={handleLeft}>
+          <ArrowLeftIcon />
+        </button>
+        <h1>{projectsArray[projectArrayIndex].title}</h1>
+        <button onClick={handleRight}>
+          <ArrowRightIcon />
+        </button>
+      </div>
       <Grid container spacing={2} sx={{ maxWidth: "1200px", margin: "auto" }}>
-        {projectEntries.map((entry) => (
+        {projectsArray[projectArrayIndex].array.map((entry) => (
           <Grid item xs={12} md={6} key={entry.id}>
             <Card
               title={entry.title}

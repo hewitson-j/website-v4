@@ -1,4 +1,79 @@
-export const projectEntries = [
+export const featuredProjects = [
+  {
+    id: "0",
+    title: "Case Notes App",
+    description:
+      "Created voluntarily for my employer in React, JSON, Typescript, and Bootstrap. It followed stakeholder constraints and reduced agent call time by 4 minutes.",
+    longDescription:
+      "This application was created as a project for one of my employers. Call center agents were having issues meeting their SLA expectations due to long note-taking time. I worked with my manager and our department head to create an application which hold templates of notes for common requests from customers. The product was made according to stakeholder requirements. Although not ultimately adopted, test runs with the app indicated that the app was projected to save an average of 4 minutes per call, bringing average call time within SLA requirments.",
+    technologies: [
+      "react",
+      "bootstrap",
+      "typescript",
+      "css",
+      "html",
+      "material-ui",
+    ],
+    image: "/CaseNotes.jpg",
+    alt: "Case Notes App",
+    github: "https://github.com/hewitson-j/",
+  },
+  {
+    id: "3",
+    title: "Pokedex Clone",
+    description:
+      "A web app utilizing a hosted database which allows users to find information about Pokemon.",
+    longDescription:
+      "I wanted to do something fun and unique for this portfolio project. The idea came to me to build a Pokedex like the kind you would see in Pokemon games with Pokemon's names, types, descriptions, and other information. I made it with an interface similar to that of the Pokedex from Pokemon Sword and Shield. I stored the data in a Postgres Database which I hosted in Supabase, and the UI which I hosted in GitHub pages fetches the data using the Supabase API.",
+    technologies: [
+      "react",
+      "typescript",
+      "GitHub",
+      "css",
+      "supabase",
+      "postgres",
+    ],
+    image: "/pokedex.png",
+    alt: "Pokedex Clone App",
+    link: "http://hewitson-j.github.io/pokedex/",
+    github: "https://github.com/hewitson-j/pokedex/",
+  },
+  {
+    id: "1",
+    title: "Leaps and Bounds Preschool",
+    description:
+      "Created for a client, this website was made in React using Bootstrap and Material UI.",
+    longDescription:
+      "A client contacted me requesting a website for their business. I created the website using React, Bootstrap, and several other technologies. The website is a single-page web application which was hosted on GitHub pages. The domain was purchased and configured from Google Domains. After deployment the website was added to the client's Colorado Universal Pre-K profile. This website led to an increase in demand for their services.",
+    technologies: ["React", "Bootstrap", "Javascript", "GitHub", "HTML", "CSS"],
+    image: "/leapsandbounds.jpg",
+    alt: "Leaps and Bounds Website Image",
+    link: "https://www.leapsandboundsprek.com",
+    github: "https://github.com/hewitson-j/leaps-and-bounds/",
+  },
+  {
+    id: "7",
+    title: "Memory Library",
+    description:
+      "A web app utilizing a hosted database which allows users to look through family photo albums and scrapbooks.",
+    longDescription:
+      "I go to visit my grandparents fairly frequently and over the years they've taken many photos and made tons of scrapbooks. My grandmother is proud of the work she's done but felt a little bit sad that when she and my grandfather pass away there might not be any interest in our family to keep the scrapbooks or that if there is we will all be in different places as people grow in their careers and move away from home. I got to thinking how would we be able to make it so that anyone interested could see family photos and memories and came up with the idea to make a repository where anyone in the family could go online and pull up the pictures in a photo library. I developed an app called the Memory Library where members of my family could do just that. The app allows users to go in and look at scanned photo albums. I implemented a Postgres Database and storage hosted on Supabase. The app uses the Supabase API to make queries and manage authentication for users so that the images are secure and random people or bad actors can't access our data. The frontend and UI are hosted on GitHub Pages.",
+    technologies: [
+      "react",
+      "typescript",
+      "GitHub",
+      "css",
+      "supabase",
+      "postgres",
+    ],
+    image: "/MemoryLibrary.jpg",
+    alt: "Memory Library",
+    link: "http://hewitson-j.github.io/memory-repository/",
+    github: "https://github.com/hewitson-j/memory-repository/",
+  },
+];
+
+export const allProjectEntries = [
   {
     id: "0",
     title: "Case Notes App",
