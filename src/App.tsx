@@ -1,4 +1,4 @@
-import { BrowserRouter } from "react-router-dom";
+import { HashRouter } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import Router from "./components/Router";
 import MobileNavbar from "./components/MobileNavbar";
@@ -25,10 +25,10 @@ function App() {
 
   return (
     <>
-      <BrowserRouter>
+      <HashRouter>
         {!isMobile ? <Navbar /> : <MobileNavbar />}
         <Router />
-      </BrowserRouter>
+      </HashRouter>
     </>
   );
 }
