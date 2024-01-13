@@ -216,25 +216,6 @@ export const allProjectEntries = [
 
 export const professionalProjectEntries = [
   {
-    id: "0",
-    title: "Case Notes App",
-    description:
-      "Created voluntarily for my employer in React, JSON, Typescript, and Bootstrap. It followed stakeholder constraints and reduced agent call time by 4 minutes.",
-    longDescription:
-      "This application was created as a project for one of my employers. Call center agents were having issues meeting their SLA expectations due to long note-taking time. I worked with my manager and our department head to create an application which hold templates of notes for common requests from customers. The product was made according to stakeholder requirements. Although not ultimately adopted, test runs with the app indicated that the app was projected to save an average of 4 minutes per call, bringing average call time within SLA requirments.",
-    technologies: [
-      "react",
-      "bootstrap",
-      "typescript",
-      "css",
-      "html",
-      "material-ui",
-    ],
-    image: "/CaseNotes.jpg",
-    alt: "Case Notes App",
-    github: "https://github.com/hewitson-j/",
-  },
-  {
     id: "1",
     title: "Leaps and Bounds Preschool",
     description:
@@ -266,6 +247,25 @@ export const professionalProjectEntries = [
     alt: "Mine Grinder",
     link: "http://minegrinder.com",
     github: "https://github.com/hewitson-j/mine-grinder-new/",
+  },
+  {
+    id: "0",
+    title: "Case Notes App",
+    description:
+      "Created voluntarily for my employer in React, JSON, Typescript, and Bootstrap. It followed stakeholder constraints and reduced agent call time by 4 minutes.",
+    longDescription:
+      "This application was created as a project for one of my employers. Call center agents were having issues meeting their SLA expectations due to long note-taking time. I worked with my manager and our department head to create an application which hold templates of notes for common requests from customers. The product was made according to stakeholder requirements. Although not ultimately adopted, test runs with the app indicated that the app was projected to save an average of 4 minutes per call, bringing average call time within SLA requirments.",
+    technologies: [
+      "react",
+      "bootstrap",
+      "typescript",
+      "css",
+      "html",
+      "material-ui",
+    ],
+    image: "/CaseNotes.jpg",
+    alt: "Case Notes App",
+    github: "https://github.com/hewitson-j/",
   },
   {
     id: "2",

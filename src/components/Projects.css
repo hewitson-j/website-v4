@@ -20,9 +20,22 @@
   background-color: transparent;
   border: none;
   color: white;
+  padding: 0;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  justify-self: center;
+  align-self: center;
+  transition-duration: 0.3s;
 }
 
 .projects-header button:hover {
-  background-color: transparent;
+  background-color: rgba(70, 70, 70, 0.531);
   color: rgb(185, 174, 174);
+  cursor: pointer;
+}
+
+.projects-header button:active {
+  background-color: rgba(39, 39, 39, 0.531);
+  color: rgb(132, 128, 128);
 }
