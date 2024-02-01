@@ -97,7 +97,12 @@ export default function Contact() {
             placeholder="Message (Required)"
           />
           <br />
-          <input type="submit" id="button" value={buttonText} />
+          <input
+            type="submit"
+            className="buttons"
+            id="button"
+            value={buttonText}
+          />
         </form>
         <br />
         <br />
