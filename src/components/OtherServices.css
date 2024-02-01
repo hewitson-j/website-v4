@@ -1,0 +1,28 @@
+.other-services {
+  width: 70%;
+  min-width: 300px;
+  margin: auto;
+}
+
+.other-services-list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.other-services-entries {
+  width: 50%;
+  max-width: 600px;
+  min-width: 300px;
+}
+
+.other-services-entries p {
+  font-size: 14pt;
+  text-align: left;
+  padding: 0.5rem;
+}
+
+.other-services-entries button {
+  font-size: 14pt;
+}

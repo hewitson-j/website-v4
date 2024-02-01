@@ -24,6 +24,13 @@ export default function MobileNavbarMenu({
         <Link to={"projects"} className="mobile-nav-links" onClick={handler}>
           Projects
         </Link>
+        <Link
+          to={"other-services"}
+          className="mobile-nav-links"
+          onClick={handler}
+        >
+          Other Services
+        </Link>
         <Link to={"contact"} className="mobile-nav-links" onClick={handler}>
           Contact
         </Link>
