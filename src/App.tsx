@@ -5,21 +5,17 @@ import MobileNavbar from "./components/MobileNavbar";
 import { useEffect, useState } from "react";
 
 function App() {
-  const [isMobile, setIsMobile] = useState(
-    window.matchMedia("(max-width: 700px)").matches
-  );
+  const [isMobile, setIsMobile] = useState(window.innerWidth < 965);
 
   useEffect(() => {
-    const mediaQuery = window.matchMedia("(max-width: 700px)");
-
-    const handleResize = (e: MediaQueryListEvent) => {
-      setIsMobile(e.matches);
+    const handleResize = () => {
+      setIsMobile(window.innerWidth < 965);
     };
 
-    mediaQuery.addEventListener("change", handleResize);
+    window.addEventListener("resize", handleResize);
 
     return () => {
-      mediaQuery.removeEventListener("change", handleResize);
+      window.removeEventListener("resize", handleResize);
     };
   }, []);
 

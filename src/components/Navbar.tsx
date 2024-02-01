@@ -65,6 +65,9 @@ export default function Navbar() {
         <Link to={"projects"} className="nav-links">
           Projects
         </Link>
+        <Link to={"other-services"} className="nav-links">
+          Other Services
+        </Link>
         <Link to={"contact"} className="nav-links">
           Contact
         </Link>
