@@ -28,7 +28,7 @@ export default function OtherServices() {
             professionalism and convenience.
           </p>
           <Link to={"/contact"}>
-            <button>Contact</button>
+            <button className="buttons">Contact</button>
           </Link>
         </div>
       </div>

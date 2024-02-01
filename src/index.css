@@ -7,6 +7,23 @@ body {
   color: white;
 }
 
+.buttons {
+  background-color: rgb(10, 5, 60);
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 16pt;
+  padding: 1rem;
+  transition-duration: 0.2s;
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
+}
+
+.buttons:hover {
+  background-color: rgb(7, 4, 37);
+  color: rgb(165, 165, 165);
+  cursor: pointer;
+}
+
 ::-webkit-scrollbar {
   width: 15px;
 }

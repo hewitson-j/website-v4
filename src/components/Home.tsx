@@ -22,7 +22,7 @@ export default function Home() {
           <br />
           <br />
           <Link to={"projects"} className="home-project-link">
-            See Projects
+            <button className="buttons">See Projects</button>
           </Link>
         </div>
         <div className="home-pic">
