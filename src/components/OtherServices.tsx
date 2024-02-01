@@ -15,17 +15,13 @@ export default function OtherServices() {
         <div className="other-services-entries">
           <h2>Notary Public - Utah, Remote</h2>
           <p>
-            As a commissioned Notary Public in the State of Utah, I offer
-            comprehensive notarial services to meet a variety of legal
-            documentation needs. I am also authorized to perform remote
-            notarizations, enabling me to provide efficient and secure notary
-            services to clients both within and outside of Utah. My commitment
-            to accuracy, reliability, and confidentiality ensures that your
-            documents are notarized in accordance with Utah's legal
-            requirements. Whether you're in need of notarizing legal documents,
-            contracts, real estate transactions, or any other documents
-            requiring a notarized signature, I am here to assist you with
-            professionalism and convenience.
+            As a commissioned Notary Public in Utah with authorization to
+            notarize remotely for persons both in an out of the State, I
+            specialize in both in-person and remote notarizations, offering
+            fast, secure services for legal documents, contracts, and real
+            estate transactions. My focus on accuracy, reliability, and
+            confidentiality ensures your notarization needs are met with the
+            highest standards, regardless of your location.
           </p>
           <Link to={"/contact"}>
             <button className="buttons">Contact</button>

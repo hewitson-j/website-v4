@@ -56,12 +56,3 @@
   background-color: rgba(39, 39, 39, 0.531);
   color: rgb(132, 128, 128);
 }
-
-@media only screen and (max-width: 900px) {
-  .icons {
-    width: 35%;
-  }
-  .links {
-    width: 35%;
-  }
-}
