@@ -12,6 +12,7 @@ import { useState } from "react";
 
 import ArrowLeftIcon from "@mui/icons-material/ArrowLeft";
 import ArrowRightIcon from "@mui/icons-material/ArrowRight";
+import { Helmet } from "react-helmet";
 
 export default function Projects() {
   const projectsArray = [
@@ -40,33 +41,38 @@ export default function Projects() {
   };
 
   return (
-    <div className="project-body">
-      <div className="projects-header">
-        <button onClick={handleLeft}>
-          <ArrowLeftIcon />
-        </button>
-        <h1>{projectsArray[projectArrayIndex].title}</h1>
-        <button onClick={handleRight}>
-          <ArrowRightIcon />
-        </button>
+    <div className="projects">
+      <Helmet>
+          <title>JacobHewitson.com - Projects</title>
+      </Helmet>
+      <div className="project-body">
+        <div className="projects-header">
+          <button onClick={handleLeft}>
+            <ArrowLeftIcon />
+          </button>
+          <h1>{projectsArray[projectArrayIndex].title}</h1>
+          <button onClick={handleRight}>
+            <ArrowRightIcon />
+          </button>
+        </div>
+        <Grid container spacing={2} sx={{ maxWidth: "1200px", margin: "auto" }}>
+          {projectsArray[projectArrayIndex].array.map((entry) => (
+            <Grid item xs={12} md={6} key={entry.id}>
+              <Card
+                title={entry.title}
+                description={entry.description}
+                github={entry.github}
+                link={entry.link}
+                alt={entry.alt}
+                image={entry.image}
+                longDescription={entry.longDescription}
+                technologies={entry.technologies}
+              />
+            </Grid>
+          ))}
+        </Grid>
+        <Copyright margin="4rem auto 1rem" />
       </div>
-      <Grid container spacing={2} sx={{ maxWidth: "1200px", margin: "auto" }}>
-        {projectsArray[projectArrayIndex].array.map((entry) => (
-          <Grid item xs={12} md={6} key={entry.id}>
-            <Card
-              title={entry.title}
-              description={entry.description}
-              github={entry.github}
-              link={entry.link}
-              alt={entry.alt}
-              image={entry.image}
-              longDescription={entry.longDescription}
-              technologies={entry.technologies}
-            />
-          </Grid>
-        ))}
-      </Grid>
-      <Copyright margin="4rem auto 1rem" />
     </div>
   );
 }

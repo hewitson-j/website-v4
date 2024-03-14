@@ -3,6 +3,7 @@ import "./Contact.css";
 import { FormEvent, useState } from "react";
 import EmailDialogue from "./EmailDialogue";
 import Copyright from "./Copyright";
+import { Helmet } from "react-helmet";
 
 emailjs.init("service_usm4a2p");
 
@@ -59,7 +60,10 @@ export default function Contact() {
   };
 
   return (
-    <>
+    <div className="contact">
+      <Helmet>
+          <title>JacobHewitson.com - Contact</title>
+      </Helmet>
       <h1>Contact</h1>
       <div className="form-body">
         <form onSubmit={handleSubmit}>
@@ -117,6 +121,6 @@ export default function Contact() {
       </div>
       <Copyright margin="1rem auto 1rem" />
       {/*  */}
-    </>
+    </div>
   );
 }
