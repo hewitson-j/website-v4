@@ -8,15 +8,14 @@ import "./Navbar.css";
 
 export default function Navbar() {
   return (
-    <div className="navbar">
+    <nav className="navbar">
       <div className="icons">
-        <Link title="Contact Page" to={"contact"}>
+        <Link title="Contact Page" to={"contact"} role="button">
           <EmailIcon
             className="icon"
             sx={{ color: "white", fontSize: "2rem" }}
           />
         </Link>
-
         <a
           href="https://www.linkedin.com/in/jacob-hewitson-18b93321a/"
           target="_blank"
@@ -59,19 +58,19 @@ export default function Navbar() {
         </a>
       </div>
       <div className="links">
-        <Link to={"/"} className="nav-links">
+        <Link to={"/"} className="nav-links" role="button">
           Home
         </Link>
-        <Link to={"projects"} className="nav-links">
+        <Link to={"projects"} className="nav-links" role="button">
           Projects
         </Link>
-        <Link to={"other-services"} className="nav-links">
+        <Link to={"other-services"} className="nav-links" role="button">
           Other Services
         </Link>
-        <Link to={"contact"} className="nav-links">
+        <Link to={"contact"} className="nav-links" role="button">
           Contact
         </Link>
       </div>
-    </div>
+    </nav>
   );
 }

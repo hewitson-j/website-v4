@@ -21,7 +21,7 @@ export default function Home() {
           </h2>
           <br />
           <br />
-          <Link to={"projects"} className="home-project-link">
+          <Link to={"projects"} className="home-project-link" role="button">
             <button className="buttons">See Projects</button>
           </Link>
         </div>

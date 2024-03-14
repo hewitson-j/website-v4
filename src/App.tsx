@@ -23,7 +23,9 @@ function App() {
     <>
       <HashRouter>
         {!isMobile ? <Navbar /> : <MobileNavbar />}
-        <Router />
+        <main>
+          <Router />
+        </main>
       </HashRouter>
     </>
   );
