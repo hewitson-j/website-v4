@@ -46,7 +46,7 @@ export const featuredProjects = [
     longDescription:
       "A client contacted me requesting a website for their business. I created the website using React, Bootstrap, and several other technologies. The website is a single-page web application which was hosted on GitHub pages. The domain was purchased and configured from Google Domains. After deployment the website was added to the client's Colorado Universal Pre-K profile. This website led to an increase in demand for their services.",
     technologies: ["React", "Bootstrap", "Javascript", "GitHub", "HTML", "CSS"],
-    image: "/leapsandbounds.jpg",
+    image: "/NewLaB.jpg",
     alt: "Leaps and Bounds Website Image",
     link: "https://www.leapsandboundsprek.com",
     github: "https://github.com/hewitson-j/leaps-and-bounds/",
