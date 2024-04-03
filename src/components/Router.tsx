@@ -4,6 +4,7 @@ import Projects from "./Projects";
 import Contact from "./Contact";
 import ErrorPage from "./ErrorPage";
 import OtherServices from "./OtherServices";
+import TermsAndConditions from "./TermaAndConditions";
 
 export default function Router() {
   return (
@@ -12,6 +13,7 @@ export default function Router() {
       <Route path="projects" element={<Projects />} />
       <Route path="other-services" element={<OtherServices />} />
       <Route path="contact" element={<Contact />} />
+      <Route path="termsandconditions" element={<TermsAndConditions/>} />
       <Route path="*" element={<ErrorPage />} />
     </Routes>
   );
