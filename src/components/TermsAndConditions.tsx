@@ -1,8 +1,23 @@
+import { Helmet } from "react-helmet";
+import { useNavigate } from "react-router-dom";
+
 export default function TermsAndConditions(){
+    const navigate = useNavigate()
+
     return (
         <div className="terms-and-conditions">
+            <Helmet>
+                <title>JacobHewitson.com - Site Terms</title>
+            </Helmet>
             <h1>Terms and Conditions</h1>
             <p>Last updated: April 03, 2024</p>
+            <button onClick={() => {
+                navigate('/')
+            }}
+            className="buttons"
+            id="tac-home-button">
+                Back to Home
+            </button>
             <p>Please read these terms and conditions carefully before using Our Service.</p>
             <h2>Interpretation and Definitions</h2>
             <h3>Interpretation</h3>
