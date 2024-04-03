@@ -4,7 +4,7 @@ import Projects from "./Projects";
 import Contact from "./Contact";
 import ErrorPage from "./ErrorPage";
 import OtherServices from "./OtherServices";
-import TermsAndConditions from "./TermaAndConditions";
+import TermsAndConditions from "./TermsAndConditions";
 
 export default function Router() {
   return (
