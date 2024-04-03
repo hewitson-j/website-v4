@@ -1,5 +1,6 @@
 import { Helmet } from "react-helmet";
 import { useNavigate } from "react-router-dom";
+import './TermsAndConditions.css'
 
 export default function TermsAndConditions(){
     const navigate = useNavigate()
