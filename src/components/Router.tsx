@@ -13,7 +13,7 @@ export default function Router() {
       <Route path="projects" element={<Projects />} />
       <Route path="other-services" element={<OtherServices />} />
       <Route path="contact" element={<Contact />} />
-      <Route path="termsandconditions" element={<TermsAndConditions/>} />
+      <Route path="terms-and-conditions" element={<TermsAndConditions/>} />
       <Route path="*" element={<ErrorPage />} />
     </Routes>
   );
