@@ -1,12 +1,11 @@
 import { Helmet } from "react-helmet";
 import { useNavigate } from "react-router-dom";
-import './TermsAndConditions.css'
 
 export default function TermsAndConditions(){
     const navigate = useNavigate()
 
     return (
-        <div className="terms-and-conditions">
+        <div className="terms-and-conditions legal">
             <Helmet>
                 <title>JacobHewitson.com - Site Terms</title>
             </Helmet>
@@ -15,7 +14,7 @@ export default function TermsAndConditions(){
             <button onClick={() => {
                 navigate('/')
             }}
-            className="buttons"
+            className="buttons legal-button"
             id="tac-home-button">
                 Back to Home
             </button>

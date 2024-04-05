@@ -24,6 +24,23 @@ body {
   cursor: pointer;
 }
 
+.legal {
+  width: 80%;
+  min-width: 300px;
+  margin: 2rem auto;
+}
+
+.legal ul {
+  width: 80%;
+  min-width: 300px;
+  margin: auto;
+  text-align: left;
+}
+
+.legal-button {
+  margin: 2rem auto;
+}
+
 ::-webkit-scrollbar {
   width: 15px;
 }
