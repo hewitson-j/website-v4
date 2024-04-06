@@ -7,7 +7,7 @@ export default function TermsAndConditions(){
     return (
         <div className="terms-and-conditions legal">
             <Helmet>
-                <title>JacobHewitson.com - Site Terms</title>
+                <title>JacobHewitson.com - Terms and Conditions</title>
             </Helmet>
             <h1>Terms and Conditions</h1>
             <p>Last updated: April 03, 2024</p>

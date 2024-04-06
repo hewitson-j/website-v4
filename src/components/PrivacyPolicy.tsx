@@ -1,3 +1,4 @@
+import { Helmet } from "react-helmet"
 import { useNavigate } from "react-router-dom"
 
 export default function PrivacyPolicy(){
@@ -5,6 +6,9 @@ export default function PrivacyPolicy(){
 
     return (
         <div className="privacy-policy legal">
+            <Helmet>
+                <title>JacobHewitson.com - Privacy Policy</title>
+            </Helmet>
             <h1>Privacy Policy</h1>
             <p>Last updated: April 04, 2024</p>
             <button onClick={() => {
