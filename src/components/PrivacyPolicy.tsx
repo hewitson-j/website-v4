@@ -10,7 +10,7 @@ export default function PrivacyPolicy(){
                 <title>JacobHewitson.com - Privacy Policy</title>
             </Helmet>
             <h1>Privacy Policy</h1>
-            <p>Last updated: April 04, 2024</p>
+            <p>Last updated: April 03, 2024</p>
             <button onClick={() => {
                 navigate('/')
             }}
