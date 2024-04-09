@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { Helmet } from 'react-helmet';
-import Profile from "../images/ProfilePic.jpg";
+import Profile from "../images/CapitolPic.jpg";
 import "./Home.css";
 import Copyright from "./Copyright";
 

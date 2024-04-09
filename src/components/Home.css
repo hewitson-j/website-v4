@@ -40,6 +40,7 @@
 
 #profile-pic {
   width: 70%;
+  max-width: 645px;
   border-radius: 500px;
   margin: auto;
 }
