@@ -3,7 +3,7 @@ body {
   padding: 0;
   font-family: "Roboto", Arial, Helvetica, sans-serif;
   text-align: center;
-  background-color: rgb(16, 17, 25);
+  background-color: rgb(22, 25, 33);
   color: white;
 }
 
@@ -22,6 +22,14 @@ body {
   background-color: rgb(7, 4, 37);
   color: rgb(165, 165, 165);
   cursor: pointer;
+}
+
+.legal-links {
+  color: white;
+}
+
+.legal-links:hover {
+  color: red;
 }
 
 .legal {
