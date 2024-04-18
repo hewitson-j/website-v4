@@ -64,7 +64,7 @@ export default function Projects() {
                 github={entry.github}
                 link={entry.link}
                 alt={entry.alt}
-                image={entry.image}
+                image={entry.image || '/DefaultImage.webp'}
                 longDescription={entry.longDescription}
                 technologies={entry.technologies}
               />
