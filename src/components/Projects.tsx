@@ -63,7 +63,7 @@ export default function Projects() {
                 description={entry.description}
                 github={entry.github}
                 link={entry.link}
-                alt={entry.alt}
+                alt={entry.image ? entry.alt : `Default Image for ${entry.title}`}
                 image={entry.image || '/DefaultImage.webp'}
                 longDescription={entry.longDescription}
                 technologies={entry.technologies}
