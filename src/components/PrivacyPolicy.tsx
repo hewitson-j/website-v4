@@ -10,7 +10,7 @@ export default function PrivacyPolicy(){
                 <title>JacobHewitson.com - Privacy Policy</title>
             </Helmet>
             <h1>Privacy Policy</h1>
-            <p>Last updated: April 03, 2024</p>
+            <p>Last updated: April 18, 2024</p>
             <button onClick={() => {
                 navigate('/')
             }}
@@ -182,7 +182,7 @@ export default function PrivacyPolicy(){
             <p>We may update Our Privacy Policy from time to time. We will notify You of any changes by posting the new Privacy Policy on this page.</p>
             <p>We will let You know via email and/or a prominent notice on Our Service, prior to the change becoming effective and update the &quot;Last updated&quot; date at the top of this Privacy Policy.</p>
             <p>You are advised to review this Privacy Policy periodically for any changes. Changes to this Privacy Policy are effective when they are posted on this page.</p>
-            
+
             <h2>Contact Us</h2>
             <p>If you have any questions about this Privacy Policy, You can contact us:</p>
             <ul>
