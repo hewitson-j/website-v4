@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { Helmet } from 'react-helmet';
-import Profile from "../images/CapitolPic.jpg";
+import CapitolProfile from '../images/Capitol Profile Pic.jpg'
 import "./Home.css";
 import Copyright from "./Copyright";
 
@@ -30,7 +30,7 @@ export default function Home() {
             </Link>
           </div>
           <div className="home-pic">
-            <img id="profile-pic" src={Profile} alt="Jacob's Profile Picture" />
+            <img id="profile-pic" src={CapitolProfile} alt="Jacob's Profile Picture" />
           </div>
         </div>
         <Copyright margin="7rem auto 1rem" />
