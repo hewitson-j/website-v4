@@ -32,7 +32,7 @@ export default function Home() {
             </Link>
           </div>
           <div className="home-pic">
-            <img id="profile-pic" src={CapitolProfile} alt="Jacob's Profile Picture" onClick={() => {
+            <img id="profile-pic" src={CapitolProfile} alt="Jacob's Profile Picture" title="About Me" onClick={() => {
               navigate('/about')
             }} />
           </div>

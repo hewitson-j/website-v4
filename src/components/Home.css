@@ -43,6 +43,12 @@
   max-width: 645px;
   border-radius: 500px;
   margin: auto;
+  transition-duration: .3s;
+}
+
+#profile-pic:hover {
+  transform: scale(1.05);
+  cursor: pointer;
 }
 
 @keyframes colorCycle {
