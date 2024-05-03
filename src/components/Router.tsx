@@ -6,12 +6,14 @@ import ErrorPage from "./ErrorPage";
 import OtherServices from "./OtherServices";
 import TermsAndConditions from "./TermsAndConditions";
 import PrivacyPolicy from "./PrivacyPolicy";
+import About from "./About";
 
 export default function Router() {
   return (
     <Routes>
       <Route path="/" element={<Home />} />
       <Route path="projects" element={<Projects />} />
+      <Route path="about" element={<About/>} />
       <Route path="other-services" element={<OtherServices />} />
       <Route path="contact" element={<Contact />} />
       <Route path="terms-and-conditions" element={<TermsAndConditions/>} />
