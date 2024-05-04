@@ -1,8 +1,12 @@
 import './About.css'
 import profilePic from '../images/Capitol Profile Pic.jpg'
+import { Link, useNavigate } from 'react-router-dom'
+import Copyright from './Copyright'
 
 
 export default function About(){
+    const navigate = useNavigate()
+
     return <div className='about'>
         <h1>Nice to Meet You!</h1>
         <div className='about-intro'>
@@ -10,8 +14,12 @@ export default function About(){
             <img src={profilePic} id='about-profile-pic' alt='My Profile Pic' />
         </div>
         <h2>School</h2>
-            <p></p>
+            <p className='paragraphs'></p>
         <h2>Work</h2>
-
+        <h2>Reach out!</h2>
+        <p className='paragraphs'>I'm always looking to share what I'm working on. Feel free to reach out by clicking this link <Link to={'/contact'}>here</Link> or by clicking the button below.</p>
+        <button onClick={() => navigate('/contact')}
+        className='buttons'>Contact Me!</button>
+        <Copyright margin='auto'/>
     </div>
 }

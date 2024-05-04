@@ -1,8 +1,21 @@
+.about {
+    width: 80%;
+    margin: auto;
+    min-width: 300px;
+}
+
+.about .paragraphs {
+    font-size: 18pt;
+    text-align: left;
+    width: 80%;
+    min-width: 300px;
+    margin: auto;
+}
+
 .about-intro {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    width: 75%;
     margin: auto;
 }
 
@@ -11,6 +24,7 @@
     align-self: center;
     justify-self: center;
     font-size: 18pt;
+    text-align: left;
 }
 
 #about-profile-pic {
@@ -19,4 +33,8 @@
     width: 100%;
     border-radius: 500px;
     margin: auto;
+}
+
+.about button {
+    margin: 2rem auto;
 }
