@@ -1,0 +1,22 @@
+.about-intro {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 75%;
+    margin: auto;
+}
+
+.about-intro p {
+    width: 50%;
+    align-self: center;
+    justify-self: center;
+    font-size: 18pt;
+}
+
+#about-profile-pic {
+    max-width: 400px;
+    min-width: 300px;
+    width: 100%;
+    border-radius: 500px;
+    margin: auto;
+}
