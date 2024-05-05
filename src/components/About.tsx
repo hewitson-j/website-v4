@@ -14,7 +14,14 @@ export default function About(){
             <img src={profilePic} id='about-profile-pic' alt='My Profile Pic' />
         </div>
         <h2>School</h2>
-            <p className='paragraphs'></p>
+            <p className='paragraphs'>
+                I have a Bachelors of Computer Science. Below are my credentials and certifications:
+                <ul>
+                    <li>BS of Science, Computer Science from Western Governors University (Graduated Nov. 2022)</li>
+                    <li>CompTIA Project+ Certification (issued Jun. 2022)</li>
+                    <li>ITIL v4 Foundations Certificate (issued Jun. 2022)</li>
+                </ul>
+            </p>
         <h2>Work</h2>
         <h2>Reach out!</h2>
         <p className='paragraphs'>I'm always looking to share what I'm working on. Feel free to reach out by clicking this link <Link to={'/contact'}>here</Link> or by clicking the button below.</p>
