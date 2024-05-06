@@ -23,10 +23,11 @@ export default function About(){
                 </ul>
             </p>
         <h2>Work</h2>
+        <p className='paragraphs'>Currently I am working full-time as a web development intern for <a href='http://www.familysearch.org'>FamilySearch</a>. I also manage web applications and websites for several organizations and clients such as <a href='http://leapsandboundsprek.com'>Leaps and Bounds Preschool, Colorado Springs</a> and the <a href='http://minegrinder.com'>Mine Grinder</a> book series</p>
         <h2>Reach out!</h2>
         <p className='paragraphs'>I'm always looking to share what I'm working on. Feel free to reach out by clicking this link <Link to={'/contact'}>here</Link> or by clicking the button below.</p>
         <button onClick={() => navigate('/contact')}
         className='buttons'>Contact Me!</button>
-        <Copyright margin='auto'/>
+        <Copyright margin='1rem auto'/>
     </div>
 }
