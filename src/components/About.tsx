@@ -15,7 +15,7 @@ export default function About(){
         </div>
         <h2>School</h2>
             <p className='paragraphs'>
-                I have a Bachelors of Computer Science. Below are my credentials and certifications:
+                I graduated with my Bachelor of Computer Science from Western Governors Univerisity in November, 2022. Below are my credentials and certifications:
                 <ul>
                     <li>BS of Science, Computer Science from Western Governors University (Graduated Nov. 2022)</li>
                     <li>CompTIA Project+ Certification (issued Jun. 2022)</li>
