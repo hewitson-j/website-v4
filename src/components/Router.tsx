@@ -18,7 +18,7 @@ export default function Router() {
       <Route path="contact" element={<Contact />} />
       <Route path="terms-and-conditions" element={<TermsAndConditions/>} />
       <Route path="privacy-policy" element={<PrivacyPolicy/>} />
-      <Route path="*" element={<ErrorPage />} />
+      <Route path="*" element={<ErrorPage title="Page not Found" message="Whoops! Looks like the page you're looking for doesn't exist. Please click the button below to return home." />} />
     </Routes>
   );
 }
