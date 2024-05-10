@@ -2,8 +2,8 @@ import { useNavigate } from "react-router-dom";
 import './ErrorPage.css'
 
 interface ErrorPageProps {
-  title: string
-  message: string
+  title?: string
+  message?: string
 }
 
 export default function ErrorPage({
