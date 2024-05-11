@@ -3,6 +3,9 @@
     margin: auto;
     min-width: 250px;
 }
+.about section {
+    margin: 4rem auto;
+}
 
 .about .paragraphs {
     font-size: 18pt;
@@ -10,6 +13,7 @@
     width: 80%;
     min-width: 300px;
     margin: auto;
+    margin-bottom: 2rem;
 }
 
 .about-intro {
@@ -43,7 +47,8 @@
 }
 
 .about button {
-    margin: 2rem auto;
+    margin: auto;
+    margin-bottom: 2rem;
 }
 
 @media screen and (max-width: 750px) {
