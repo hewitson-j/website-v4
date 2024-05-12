@@ -19,9 +19,9 @@ export default function About(){
                 I graduated with my Bachelor of Computer Science from Western Governors Univerisity in November, 2022. Below are my credentials and certifications:
             </p>
             <ul className='paragraphs'>
-                    <li>BS of Science, Computer Science from Western Governors University (Graduated Nov. 2022)</li>
-                    <li>CompTIA Project+ Certification (issued Jun. 2022)</li>
-                    <li>ITIL v4 Foundations Certificate (issued Jun. 2022)</li>
+                <li>BS of Science, Computer Science from Western Governors University (Graduated Nov. 2022)</li>
+                <li>CompTIA Project+ Certification (issued Jun. 2022)</li>
+                <li>ITIL v4 Foundations Certificate (issued Jun. 2022)</li>
             </ul>
         </section>
         <section>
