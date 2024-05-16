@@ -25,10 +25,6 @@
     min-width: 300px;
 }
 
-.about-intro img {
-    animation: coinFlip 1s linear;
-}
-
 .about-intro p {
     width: 50%;
     align-self: center;
@@ -44,10 +40,11 @@
 
 #about-profile-pic {
     max-width: 400px;
-    min-width: 300px;
+    min-width: 200px;
     width: 100%;
     border-radius: 500px;
     margin: auto;
+    animation: coinFlip 1s linear;
 }
 
 .about button {
@@ -58,6 +55,12 @@
 @media screen and (max-width: 750px) {
     .about {
         width: 95%;
+    }
+    #about-profile-pic {
+        width: 80%;
+    }
+    .about-intro p {
+        width: 80%;
     }
 }
 

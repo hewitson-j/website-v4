@@ -3,6 +3,7 @@ import Navbar from "./components/Navbar";
 import Router from "./components/Router";
 import MobileNavbar from "./components/MobileNavbar";
 import { useEffect, useState } from "react";
+import ScrollToTop from "./components/ScrollToTop";
 
 function App() {
   const [isMobile, setIsMobile] = useState(window.innerWidth < 965);
@@ -22,6 +23,7 @@ function App() {
   return (
     <>
       <HashRouter>
+        <ScrollToTop/>
         {!isMobile ? <Navbar /> : <MobileNavbar />}
         <main>
           <Router />
