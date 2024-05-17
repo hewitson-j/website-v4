@@ -4,6 +4,7 @@ import Router from "./components/Router";
 import MobileNavbar from "./components/MobileNavbar";
 import { useEffect, useState } from "react";
 import ScrollToTop from "./components/ScrollToTop";
+import ReactPullToRefresh from "react-pull-to-refresh";
 
 function App() {
   const [isMobile, setIsMobile] = useState(window.innerWidth < 965);
@@ -23,11 +24,24 @@ function App() {
   return (
     <>
       <HashRouter>
-        <ScrollToTop/>
-        {!isMobile ? <Navbar /> : <MobileNavbar />}
-        <main>
-          <Router />
-        </main>
+        {isMobile ? (
+        <ReactPullToRefresh onRefresh={async () => {
+          location.reload()
+        }}>
+          <ScrollToTop/>
+          <MobileNavbar />
+          <main>
+            <Router />
+          </main>
+        </ReactPullToRefresh>
+        ) : (
+        <>
+          <ScrollToTop/>
+          <Navbar />
+          <main>
+            <Router />
+          </main>
+        </>)} 
       </HashRouter>
     </>
   );
