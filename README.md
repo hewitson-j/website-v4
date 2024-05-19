@@ -9,3 +9,6 @@ Users enter into [jacobhewitson.com](http://jacobhewitson.com)'s home page and f
 - [Contact](http://jacobhewitson.com/#/contact)
 
 If they click on my photo on the home page they will be redirected to an [About Me](http://jacobhewitson.com/#/about) page.
+
+## Projects
+The Projects page uses a modal component from Material-UI
