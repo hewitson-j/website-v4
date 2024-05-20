@@ -11,4 +11,7 @@ Users enter into [jacobhewitson.com](http://jacobhewitson.com)'s home page and f
 If they click on my photo on the home page they will be redirected to an [About Me](http://jacobhewitson.com/#/about) page.
 
 ## Projects
-The Projects page uses a modal component from Material-UI
+The Projects page uses a modal component from Material-UI. Users can click on the button of each project image to be brought to a closable modal with a summary of the project, GitHub repo link, (if live or hosted) a link to the project, and a list of the technologies used in it.
+
+## Other Services
+This section provides information on other services I am able to perform outside of my software engineering services. This has a simple flex container to hold the different paragraphs and summaries of services provided.
