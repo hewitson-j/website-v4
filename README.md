@@ -15,3 +15,6 @@ The Projects page uses a modal component from Material-UI. Users can click on th
 
 ## Other Services
 This section provides information on other services I am able to perform outside of my software engineering services. This has a simple flex container to hold the different paragraphs and summaries of services provided.
+
+## Contact
+This section is set apart for users to input their information into a form where they can send me an email. This uses the EmailJS library to handle requests and send the form data as an email.
