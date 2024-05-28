@@ -10,7 +10,7 @@ export default function About(){
     return <div className='about'>
         <h1>Nice to Meet You!</h1>
         <div className='about-intro'>
-            <img src={profilePic} id='about-profile-pic' alt='My Profile Pic' />
+            <img src={profilePic} id='about-profile-pic' alt='Jacob Hewitson Profile Pic' title='Profile Pic' />
             <p>It's really nice to meet you. My name is Jacob Hewitson and I am a software engineer working with <a href='http://www.familysearch.org'>FamilySearch</a>. Here you can get to know a little more about me!</p>
         </div>
         <section>
