@@ -26,7 +26,7 @@ export default function About(){
         </section>
         <section>
             <h2>Work</h2>
-            <p className='paragraphs'>Currently I am working full-time as a web development intern for <a href='http://www.familysearch.org'>FamilySearch</a>. I also manage web applications and websites for several organizations and clients such as <a href='http://leapsandboundsprek.com'>Leaps and Bounds Preschool, Colorado Springs</a> and the <a href='http://minegrinder.com'>Mine Grinder</a> book series</p>
+            <p className='paragraphs'>Currently I am working full-time as a web development intern for <a href='http://www.familysearch.org'>FamilySearch</a>. I also manage web applications and websites for several organizations and clients such as <a href='http://leapsandboundsprek.com'>Leaps and Bounds Preschool, Colorado Springs</a> and the <a href='http://minegrinder.com'>Mine Grinder</a> book series.</p>
         </section>
         <section>
             <h2>Reach out!</h2>
