@@ -20,4 +20,4 @@ This section provides information on other services I am able to perform outside
 This section is set apart for users to input their information into a form where they can send me an email. This uses the EmailJS library to handle requests and send the form data as an email.
 
 ## About
-From the home page, users can click on my profile picture and be redirected to [About](http://jacobhewitson.com/#/about) which has some information about who I am and the kinds of work I've done.
+From the home page, users can click on my profile picture and be redirected to [About](http://jacobhewitson.com/#/about) which has some information about who I am and the kinds of work I've done. It has a section for my Education and Work History.
