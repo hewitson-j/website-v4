@@ -43,7 +43,7 @@ export default function Projects() {
   return (
     <div className="projects">
       <Helmet>
-          <title>JacobHewitson.com - Projects</title>
+        <title>JacobHewitson.com - Projects</title>
       </Helmet>
       <div className="project-body">
         <div className="projects-header">
@@ -63,8 +63,10 @@ export default function Projects() {
                 description={entry.description}
                 github={entry.github}
                 link={entry.link}
-                alt={entry.image ? entry.alt : `Default Image for ${entry.title}`}
-                image={entry.image || '/DefaultImage.webp'}
+                alt={
+                  entry.image ? entry.alt : `Default Image for ${entry.title}`
+                }
+                image={entry.image || "/DefaultImage.webp"}
                 longDescription={entry.longDescription}
                 technologies={entry.technologies}
               />

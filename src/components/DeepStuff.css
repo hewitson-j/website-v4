@@ -1,0 +1,48 @@
+.deep-stuff-paragraphs {
+  font-size: 18pt;
+  width: 80%;
+  min-width: 300px;
+  margin: auto;
+}
+
+.deep-stuff-nav {
+  display: flex;
+  width: 50%;
+  min-width: 300px;
+  margin: auto;
+  justify-content: space-evenly;
+}
+
+.deep-stuff-nav button {
+  background-color: transparent;
+  border: none;
+  color: white;
+  padding: 0;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  justify-self: center;
+  align-self: center;
+  transition-duration: 0.3s;
+}
+
+.deep-stuff-nav button:hover {
+  background-color: rgba(70, 70, 70, 0.531);
+  color: rgb(185, 174, 174);
+  cursor: pointer;
+}
+
+.deep-stuff-nav button:active {
+  background-color: rgba(39, 39, 39, 0.531);
+  color: rgb(132, 128, 128);
+}
+
+.deep-stuff-content {
+  width: 70%;
+  margin: auto;
+  min-width: 300px;
+}
+
+.thoughts-paragraphs {
+  font-size: 14pt;
+}
