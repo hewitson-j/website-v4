@@ -9,10 +9,8 @@ import {
 } from "./ProjectEntries";
 import Copyright from "./Copyright";
 import { useState } from "react";
-
-import ArrowLeftIcon from "@mui/icons-material/ArrowLeft";
-import ArrowRightIcon from "@mui/icons-material/ArrowRight";
 import { Helmet } from "react-helmet";
+import SortHeader from "./utils/SortHeader";
 
 export default function Projects() {
   const projectsArray = [
@@ -24,37 +22,18 @@ export default function Projects() {
 
   const [projectArrayIndex, setProjectArrayIndex] = useState(0);
 
-  const handleLeft = () => {
-    if (projectArrayIndex === 0) {
-      setProjectArrayIndex(projectsArray.length - 1);
-    } else {
-      setProjectArrayIndex(projectArrayIndex - 1);
-    }
-  };
-
-  const handleRight = () => {
-    if (projectArrayIndex === projectsArray.length - 1) {
-      setProjectArrayIndex(0);
-    } else {
-      setProjectArrayIndex(projectArrayIndex + 1);
-    }
-  };
-
   return (
     <div className="projects">
       <Helmet>
         <title>JacobHewitson.com - Projects</title>
       </Helmet>
       <div className="project-body">
-        <div className="projects-header">
-          <button onClick={handleLeft}>
-            <ArrowLeftIcon />
-          </button>
-          <h1>{projectsArray[projectArrayIndex].title}</h1>
-          <button onClick={handleRight}>
-            <ArrowRightIcon />
-          </button>
-        </div>
+        <SortHeader
+          arrayLength={projectsArray.length}
+          arrayTitle={projectsArray[projectArrayIndex].title}
+          index={projectArrayIndex}
+          setIndex={setProjectArrayIndex}
+        />
         <Grid container spacing={2} sx={{ maxWidth: "1200px", margin: "auto" }}>
           {projectsArray[projectArrayIndex].array.map((entry) => (
             <Grid item xs={12} md={6} key={entry.id}>

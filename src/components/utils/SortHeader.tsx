@@ -35,7 +35,7 @@ export default function SortHeader({
       <button onClick={handleLeft}>
         <ArrowLeftIcon />
       </button>
-      <h3>{arrayTitle}</h3>
+      <h2>{arrayTitle}</h2>
       <button onClick={handleRight}>
         <ArrowRightIcon />
       </button>
