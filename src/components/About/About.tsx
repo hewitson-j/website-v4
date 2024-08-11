@@ -1,7 +1,7 @@
 import "./About.css";
 import profilePic from "../images/Capitol Profile Pic.jpg";
 import { Link, useNavigate } from "react-router-dom";
-import Copyright from "./Copyright";
+import Copyright from "../Copyright";
 
 export default function About() {
   const navigate = useNavigate();

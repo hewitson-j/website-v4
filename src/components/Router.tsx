@@ -6,7 +6,7 @@ import ErrorPage from "./ErrorPage";
 import OtherServices from "./OtherServices";
 import TermsAndConditions from "./TermsAndConditions";
 import PrivacyPolicy from "./PrivacyPolicy";
-import About from "./About";
+import About from "./About/About";
 import DeepStuff from "./DeepStuff";
 
 export default function Router() {

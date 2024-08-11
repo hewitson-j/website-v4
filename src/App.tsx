@@ -1,7 +1,7 @@
 import { HashRouter } from "react-router-dom";
-import Navbar from "./components/Navbar";
+import Navbar from "./components/Navbars/Navbar";
 import Router from "./components/Router";
-import MobileNavbar from "./components/MobileNavbar";
+import MobileNavbar from "./components/Navbars/MobileNavbar";
 import { useEffect, useState } from "react";
 import ScrollToTop from "./components/ScrollToTop";
 
@@ -23,7 +23,7 @@ function App() {
   return (
     <>
       <HashRouter>
-        <ScrollToTop/>
+        <ScrollToTop />
         {!isMobile ? <Navbar /> : <MobileNavbar />}
         <main>
           <Router />
