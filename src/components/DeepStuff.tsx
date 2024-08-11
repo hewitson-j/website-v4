@@ -1,27 +1,11 @@
 import { useState } from "react";
 import "./DeepStuff.css";
 import { thoughtsArray } from "./DeepStuffContent";
-import ArrowLeftIcon from "@mui/icons-material/ArrowLeft";
-import ArrowRightIcon from "@mui/icons-material/ArrowRight";
 import Copyright from "./Copyright";
+import SortHeader from "./utils/SortHeader";
 
 export default function DeepStuff() {
   const [thoughtIndex, setThoughtIndex] = useState(0);
-
-  const handleLeft = () => {
-    if (thoughtIndex === 0) {
-      setThoughtIndex(thoughtsArray.length - 1);
-    } else {
-      setThoughtIndex(thoughtIndex - 1);
-    }
-  };
-  const handleRight = () => {
-    if (thoughtIndex === thoughtsArray.length - 1) {
-      setThoughtIndex(0);
-    } else {
-      setThoughtIndex(thoughtIndex + 1);
-    }
-  };
 
   return (
     <div className="deep-stuff">
@@ -35,15 +19,12 @@ export default function DeepStuff() {
         interested in it.
       </p>
       <h2>Thoughts of Inspiration</h2>
-      <div className="deep-stuff-nav">
-        <button onClick={handleLeft}>
-          <ArrowLeftIcon />
-        </button>
-        <h3>{thoughtsArray[thoughtIndex].title}</h3>
-        <button onClick={handleRight}>
-          <ArrowRightIcon />
-        </button>
-      </div>
+      <SortHeader
+        arrayLength={thoughtsArray.length}
+        arrayTitle={thoughtsArray[thoughtIndex].title}
+        index={thoughtIndex}
+        setIndex={setThoughtIndex}
+      />
       <div className="deep-stuff-content">
         {thoughtsArray[thoughtIndex].content.map((paragraph) => {
           if (paragraph === "") {
