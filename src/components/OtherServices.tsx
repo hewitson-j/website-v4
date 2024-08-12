@@ -2,14 +2,15 @@ import { Link } from "react-router-dom";
 import Copyright from "./Copyright";
 import "./OtherServices.css";
 import { Helmet } from "react-helmet";
+import PageTitle from "./utils/PageTitle";
 
 export default function OtherServices() {
   return (
     <div className="other-services">
       <Helmet>
-          <title>JacobHewitson.com - Other Services</title>
+        <title>JacobHewitson.com - Other Services</title>
       </Helmet>
-      <h1>Other Services</h1>
+      <PageTitle title="Other Services" />
       <h3>
         While software development is my foundation, my expertise extends into a
         variety of other services tailored to bring comprehensive solutions to

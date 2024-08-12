@@ -4,6 +4,7 @@ import { FormEvent, useState } from "react";
 import EmailDialogue from "./EmailDialogue";
 import Copyright from "./Copyright";
 import { Helmet } from "react-helmet";
+import PageTitle from "./utils/PageTitle";
 
 emailjs.init("service_usm4a2p");
 
@@ -62,9 +63,9 @@ export default function Contact() {
   return (
     <div className="contact">
       <Helmet>
-          <title>JacobHewitson.com - Contact</title>
+        <title>JacobHewitson.com - Contact</title>
       </Helmet>
-      <h1>Contact</h1>
+      <PageTitle title="Contact" />
       <div className="form-body">
         <form onSubmit={handleSubmit}>
           <input

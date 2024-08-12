@@ -2,13 +2,14 @@ import "./About.css";
 import profilePic from "../images/Capitol Profile Pic.jpg";
 import { Link, useNavigate } from "react-router-dom";
 import Copyright from "./Copyright";
+import PageTitle from "./utils/PageTitle";
 
 export default function About() {
   const navigate = useNavigate();
 
   return (
     <div className="about">
-      <h1>Nice to Meet You!</h1>
+      <PageTitle title="Nice to Meet You!" />
       <div className="about-intro">
         <img
           src={profilePic}
