@@ -3,12 +3,14 @@ import profilePic from "../images/Capitol Profile Pic.jpg";
 import { Link, useNavigate } from "react-router-dom";
 import Copyright from "./Copyright";
 import PageTitle from "./utils/PageTitle";
+import PageHelmet from "./utils/PageHelmet";
 
 export default function About() {
   const navigate = useNavigate();
 
   return (
     <div className="about">
+      <PageHelmet title="JacobHewitson.com - About" />
       <PageTitle title="Nice to Meet You!" />
       <div className="about-intro">
         <img

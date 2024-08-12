@@ -3,12 +3,14 @@ import "./DeepStuff.css";
 import { thoughtsArray } from "./DeepStuffContent";
 import Copyright from "./Copyright";
 import SortHeader from "./utils/SortHeader";
+import PageHelmet from "./utils/PageHelmet";
 
 export default function DeepStuff() {
   const [thoughtIndex, setThoughtIndex] = useState(0);
 
   return (
     <div className="deep-stuff">
+      <PageHelmet title="JacobHewitson.com - Deep Thoughts" />
       <h1>Deep Thoughts</h1>
       <p className="deep-stuff-paragraphs">
         Sometimes I have moments of inspiration, in coding, in thoughts, really

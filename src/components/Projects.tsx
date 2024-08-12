@@ -9,8 +9,8 @@ import {
 } from "./ProjectEntries";
 import Copyright from "./Copyright";
 import { useState } from "react";
-import { Helmet } from "react-helmet";
 import SortHeader from "./utils/SortHeader";
+import PageHelmet from "./utils/PageHelmet";
 
 export default function Projects() {
   const projectsArray = [
@@ -24,9 +24,7 @@ export default function Projects() {
 
   return (
     <div className="projects">
-      <Helmet>
-        <title>JacobHewitson.com - Projects</title>
-      </Helmet>
+      <PageHelmet title="JacobHewitson.com - Projects" />
       <div className="project-body">
         <SortHeader
           arrayLength={projectsArray.length}
