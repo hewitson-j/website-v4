@@ -107,8 +107,6 @@ export default function Contact() {
             value={buttonText}
           />
         </form>
-        <br />
-        <br />
         {openDialogue && (
           <EmailDialogue
             message={message}
