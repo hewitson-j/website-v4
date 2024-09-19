@@ -15,6 +15,8 @@ export default function SortHeader({
   index,
   setIndex,
 }: SortHeaderProps) {
+  const disabled = arrayLength <= 1;
+
   const handleLeft = () => {
     if (index === 0) {
       setIndex(arrayLength - 1);
@@ -32,13 +34,17 @@ export default function SortHeader({
 
   return (
     <div className="sort-header">
-      <button onClick={handleLeft}>
-        <ArrowLeftIcon />
-      </button>
+      {!disabled && (
+        <button onClick={handleLeft}>
+          <ArrowLeftIcon />
+        </button>
+      )}
       <h2>{arrayTitle}</h2>
-      <button onClick={handleRight}>
-        <ArrowRightIcon />
-      </button>
+      {!disabled && (
+        <button onClick={handleRight}>
+          <ArrowRightIcon />
+        </button>
+      )}
     </div>
   );
 }
