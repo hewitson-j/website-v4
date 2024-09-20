@@ -1,25 +1,25 @@
 import { render, screen } from "@testing-library/react";
-import Home from "../components/Home";
+import About from "../components/About";
 import { MemoryRouter } from "react-router-dom";
 
 test("renders intro text", () => {
   render(
     <MemoryRouter>
-      <Home />
+      <About />
     </MemoryRouter>
   );
-  const introText = screen.getByText(/I'm Jacob, nice to meet you./i);
+  const introText = screen.getByText(/It's really nice to meet you/i);
   expect(introText).toBeInTheDocument();
 });
 
 test("renders image", () => {
   render(
     <MemoryRouter>
-      <Home />
+      <About />
     </MemoryRouter>
   );
 
-  const image = screen.getByAltText(/Jacob's Profile Picture/i);
+  const image = screen.getByAltText(/Jacob Hewitson Profile Pic/i);
 
   expect(image).toBeInTheDocument();
 });
