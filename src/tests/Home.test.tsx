@@ -12,7 +12,7 @@ test("renders intro text", () => {
   expect(introText).toBeInTheDocument();
 });
 
-test("renders image", () => {
+test("renders profile pic", () => {
   render(
     <MemoryRouter>
       <Home />
