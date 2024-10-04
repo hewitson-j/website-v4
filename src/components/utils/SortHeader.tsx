@@ -35,13 +35,13 @@ export default function SortHeader({
   return (
     <div className="sort-header">
       {!disabled && (
-        <button onClick={handleLeft}>
+        <button onClick={handleLeft} title="Previous" aria-label="Previous">
           <ArrowLeftIcon />
         </button>
       )}
       <h2>{arrayTitle}</h2>
       {!disabled && (
-        <button onClick={handleRight}>
+        <button onClick={handleRight} title="Next" aria-label="Next">
           <ArrowRightIcon />
         </button>
       )}
