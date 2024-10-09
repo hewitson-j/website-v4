@@ -23,4 +23,4 @@ This section is set apart for users to input their information into a form where
 From the home page, users can click on my profile picture and be redirected to [About](http://jacobhewitson.com/#/about) which has some information about who I am and the kinds of work I've done. It has a section for my Education and Work History.
 
 ## Tests
-Tests will be written for each component. Code coverage is at 
+Tests will be available for each component. Code coverage is at 
