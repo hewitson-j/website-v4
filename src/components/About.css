@@ -1,80 +1,83 @@
 .about {
-    width: 80%;
-    margin: auto;
-    min-width: 250px;
+  width: 80%;
+  margin: auto;
+  min-width: 250px;
 }
 .about section {
-    margin: 4rem auto;
+  margin: 4rem auto;
 }
 
 .about .paragraphs {
-    font-size: 18pt;
-    text-align: left;
-    width: 80%;
-    min-width: 300px;
-    margin: auto;
-    margin-bottom: 2rem;
+  font-size: 18pt;
+  text-align: left;
+  width: 80%;
+  min-width: 300px;
+  margin: auto;
+  margin-bottom: 2rem;
 }
 
 .about-intro {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    margin: auto;
-    flex-wrap: wrap;
-    min-width: 300px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: auto;
+  flex-wrap: wrap;
+  min-width: 300px;
 }
 
 .about-intro p {
-    width: 50%;
-    align-self: center;
-    justify-self: center;
-    font-size: 18pt;
-    text-align: left;
-    margin: 2rem auto;
+  width: 50%;
+  align-self: center;
+  justify-self: center;
+  font-size: 18pt;
+  text-align: left;
+  margin: 2rem auto;
 }
 
 .about ul {
-    margin: 2rem auto !important;
+  margin: 2rem auto !important;
 }
 
 #about-profile-pic {
-    max-width: 400px;
-    min-width: 200px;
-    width: 100%;
-    border-radius: 500px;
-    margin: auto;
-    animation: coinFlip 1s linear;
+  max-width: 400px;
+  min-width: 200px;
+  width: 100%;
+  border-radius: 500px;
+  margin: auto;
+  animation: inOut 1s linear;
+  transition-duration: 0.5s;
+}
+
+#about-profile-pic:hover {
+  cursor: pointer;
+  transform: scale(1.1);
 }
 
 .about button {
-    margin: auto;
-    margin-bottom: 2rem;
+  margin: auto;
+  margin-bottom: 2rem;
 }
 
 @media screen and (max-width: 750px) {
-    .about {
-        width: 95%;
-    }
-    #about-profile-pic {
-        width: 80%;
-    }
-    .about-intro p {
-        width: 80%;
-    }
+  .about {
+    width: 95%;
+  }
+  #about-profile-pic {
+    width: 80%;
+  }
+  .about-intro p {
+    width: 80%;
+  }
 }
 
-@keyframes coinFlip {
-    0% {
-        /* transform: scale(1); */
-        transform: rotateY(0deg);
-    }
-    50% {
-        /* transform: scale(1.1); */
-        transform: rotateY(180deg);
-    }
-    100% {
-        /* transform: scale(1); */
-        transform: rotateY(360deg);
-    }
+@keyframes inOut {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
 }

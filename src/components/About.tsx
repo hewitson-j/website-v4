@@ -24,9 +24,9 @@ export default function About() {
         />
         <p>
           It's really nice to meet you. My name is Jacob Hewitson and I am a
-          software engineer working with{" "}
-          <a href="http://www.familysearch.org">FamilySearch</a>. Here you can
-          get to know a little more about me!
+          software engineer. I recently finished a contract working with{" "}
+          <a href="http://www.familysearch.org">FamilySearch</a>, a Genealogical
+          Organization. Here you can get to know a little more about me!
         </p>
       </div>
       <section>
@@ -48,7 +48,7 @@ export default function About() {
       <section>
         <h2>Work</h2>
         <p className="paragraphs">
-          Currently I am working full-time as a web development intern for{" "}
+          I recently finished working as a Web Developer Intern for{" "}
           <a href="http://www.familysearch.org">FamilySearch</a>. I also manage
           web applications and websites for several organizations and clients
           such as{" "}

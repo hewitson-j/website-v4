@@ -1,6 +1,9 @@
 # Website v4 Changelog
 
-## 4.7.4 9/19/24
+## 4.7.6 9/19/24
+Updated about me information, profile pic animation.
+
+## 4.7.5 10/1/2024
 Added aria label and title to next and previous buttons in SortHeader
 
 ## 4.7.4 9/19/24
