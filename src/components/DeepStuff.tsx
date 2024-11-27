@@ -28,11 +28,15 @@ export default function DeepStuff() {
         setIndex={setThoughtIndex}
       />
       <div className="deep-stuff-content">
-        {thoughtsArray[thoughtIndex].content.map((paragraph) => {
+        {thoughtsArray[thoughtIndex].content.map((paragraph, index) => {
           if (paragraph === "") {
-            return <br />;
+            return <br key={`break-${index}`} />;
           } else {
-            return <p className="thoughts-paragraphs">{paragraph}</p>;
+            return (
+              <p key={`paragraph-${index}`} className="thoughts-paragraphs">
+                {paragraph}
+              </p>
+            );
           }
         })}
         <hr />

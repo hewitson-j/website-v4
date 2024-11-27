@@ -9,7 +9,7 @@
 .sort-header button {
   background-color: transparent;
   border: none;
-  color: white;
+  color: black;
   padding: 0;
   border-radius: 50%;
   width: 50px;
@@ -21,11 +21,11 @@
 
 .sort-header button:hover {
   background-color: rgba(70, 70, 70, 0.531);
-  color: rgb(185, 174, 174);
+  color: white;
   cursor: pointer;
 }
 
 .sort-header button:active {
   background-color: rgba(39, 39, 39, 0.531);
-  color: rgb(132, 128, 128);
+  color: white;
 }

@@ -1,6 +1,6 @@
 .form-body {
   width: 75%;
-  background-color: rgba(51, 51, 51, 0.3);
+  background-color: rgba(51, 51, 51, 0.505);
   margin: auto;
   margin-bottom: 4rem;
   border-radius: 10px;
@@ -14,7 +14,7 @@
   width: 90%;
   height: 2rem;
   font-size: 14pt;
-  background-color: rgba(0, 0, 0, 0.499);
+  background-color: rgba(0, 0, 0, 0.685);
   color: white;
   border-radius: 10px;
   padding: 0.5rem;

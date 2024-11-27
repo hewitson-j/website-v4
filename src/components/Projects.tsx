@@ -23,35 +23,41 @@ export default function Projects() {
   const [projectArrayIndex, setProjectArrayIndex] = useState(0);
 
   return (
-    <div className="projects">
-      <PageHelmet title="JacobHewitson.com - Projects" />
-      <div className="project-body">
-        <SortHeader
-          arrayLength={projectsArray.length}
-          arrayTitle={projectsArray[projectArrayIndex].title}
-          index={projectArrayIndex}
-          setIndex={setProjectArrayIndex}
-        />
-        <Grid container spacing={2} sx={{ maxWidth: "1200px", margin: "auto" }}>
-          {projectsArray[projectArrayIndex].array.map((entry) => (
-            <Grid item xs={12} md={6} key={entry.id}>
-              <Card
-                title={entry.title}
-                description={entry.description}
-                github={entry.github}
-                link={entry.link}
-                alt={
-                  entry.image ? entry.alt : `Default Image for ${entry.title}`
-                }
-                image={entry.image || "/DefaultImage.webp"}
-                longDescription={entry.longDescription}
-                technologies={entry.technologies}
-              />
-            </Grid>
-          ))}
-        </Grid>
-        <Copyright margin="4rem auto 1rem" />
+    <>
+      <div className="projects white-background">
+        <PageHelmet title="JacobHewitson.com - Projects" />
+        <div className="project-body">
+          <SortHeader
+            arrayLength={projectsArray.length}
+            arrayTitle={projectsArray[projectArrayIndex].title}
+            index={projectArrayIndex}
+            setIndex={setProjectArrayIndex}
+          />
+          <Grid
+            container
+            spacing={2}
+            sx={{ maxWidth: "1200px", margin: "auto" }}
+          >
+            {projectsArray[projectArrayIndex].array.map((entry) => (
+              <Grid item xs={12} md={6} key={entry.id}>
+                <Card
+                  title={entry.title}
+                  description={entry.description}
+                  github={entry.github}
+                  link={entry.link}
+                  alt={
+                    entry.image ? entry.alt : `Default Image for ${entry.title}`
+                  }
+                  image={entry.image || "/DefaultImage.webp"}
+                  longDescription={entry.longDescription}
+                  technologies={entry.technologies}
+                />
+              </Grid>
+            ))}
+          </Grid>
+        </div>
       </div>
-    </div>
+      <Copyright margin="4rem auto 1rem" />
+    </>
   );
 }

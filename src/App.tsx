@@ -4,6 +4,7 @@ import Router from "./components/Router";
 import MobileNavbar from "./components/Navbars/MobileNavbar";
 import { useEffect, useState } from "react";
 import ScrollToTop from "./components/ScrollToTop";
+import ParticlesBg from "particles-bg";
 
 function App() {
   const [isMobile, setIsMobile] = useState(window.innerWidth < 965);
@@ -23,6 +24,7 @@ function App() {
   return (
     <>
       <HashRouter>
+        <ParticlesBg type="cobweb" bg />
         <ScrollToTop />
         {!isMobile ? <Navbar /> : <MobileNavbar />}
         <main>

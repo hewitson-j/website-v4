@@ -1,6 +1,10 @@
-.project-body {
+/* .project-body {
   width: 70%;
   margin: 0 15%;
+} */
+
+.projects {
+  padding: 1rem;
 }
 
 .projects-header {
@@ -19,7 +23,7 @@
 .projects-header button {
   background-color: transparent;
   border: none;
-  color: white;
+  color: black;
   padding: 0;
   border-radius: 50%;
   width: 50px;

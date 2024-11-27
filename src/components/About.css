@@ -1,7 +1,6 @@
 .about {
-  width: 80%;
-  margin: auto;
-  min-width: 250px;
+  max-height: 70vh;
+  overflow-y: scroll;
 }
 .about section {
   margin: 4rem auto;
@@ -44,13 +43,6 @@
   width: 100%;
   border-radius: 500px;
   margin: auto;
-  animation: inOut 1s linear;
-  transition-duration: 0.5s;
-}
-
-#about-profile-pic:hover {
-  cursor: pointer;
-  transform: scale(1.1);
 }
 
 .about button {

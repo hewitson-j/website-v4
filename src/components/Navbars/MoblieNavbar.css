@@ -4,6 +4,7 @@
   display: flex;
   justify-content: space-between;
   max-height: 36px;
+  color: white;
 }
 
 .menu-icon {

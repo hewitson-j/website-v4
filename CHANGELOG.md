@@ -1,6 +1,9 @@
 # Website v4 Changelog
 
-## 4.7.6 9/19/24
+## 4.7.7 11/26/24
+Added ParticlesBg background, updated styles to account for this.
+
+## 4.7.6 11/19/24
 Updated about me information, profile pic animation.
 
 ## 4.7.5 10/1/2024
