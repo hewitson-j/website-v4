@@ -1,7 +1,10 @@
 # Website v4 Changelog
 
+## 4.7.10 11/28/24
+Changed overflow to be full body, made navbars sticky.
+
 ## 4.7.9 11/28/24
-Fix overflow with new background
+Fixed overflow.
 
 ## 4.7.8 11/27/24
 Fix overflow with new background

@@ -25,11 +25,15 @@ function App() {
     <>
       <HashRouter>
         <ParticlesBg type="cobweb" bg />
-        <ScrollToTop />
-        {!isMobile ? <Navbar /> : <MobileNavbar />}
-        <main>
-          <Router />
-        </main>
+        <div className="body-content">
+          <ScrollToTop />
+          <div className="navbars-location">
+            {!isMobile ? <Navbar /> : <MobileNavbar />}
+          </div>
+          <main>
+            <Router />
+          </main>
+        </div>
       </HashRouter>
     </>
   );
