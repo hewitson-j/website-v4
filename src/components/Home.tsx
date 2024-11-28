@@ -16,7 +16,7 @@ export default function Home() {
             <h1 id="home-intro-text">I'm Jacob, nice to meet you.</h1>
             <h2 className="home-description" id="home-text-tagline">
               Looking for a <br />
-              <span id="home-emphasis-text">Frontend Engineer</span>?
+              <span id="home-emphasis-text">Software Engineer</span>?
             </h2>
             <h2 className="home-description">
               <br />

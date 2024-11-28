@@ -1,5 +1,8 @@
 # Website v4 Changelog
 
+## 4.7.9 11/28/24
+Fix overflow with new background
+
 ## 4.7.8 11/27/24
 Fix overflow with new background
 
