@@ -1,5 +1,8 @@
 # Website v4 Changelog
 
+## 4.7.8 11/27/24
+Fix overflow with new background
+
 ## 4.7.7 11/26/24
 Added ParticlesBg background, updated styles to account for this. Fixed vulnerabilities.
 
