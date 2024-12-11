@@ -1,5 +1,8 @@
 # Website v4 Changelog
 
+## 4.7.11 12/10/24
+Removed deep stuff.
+
 ## 4.7.10 11/28/24
 Changed overflow to be full body, made navbars sticky.
 

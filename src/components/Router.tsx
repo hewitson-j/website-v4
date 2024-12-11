@@ -7,7 +7,6 @@ import OtherServices from "./OtherServices";
 import TermsAndConditions from "./TermsAndConditions";
 import PrivacyPolicy from "./PrivacyPolicy";
 import About from "./About";
-import DeepStuff from "./DeepStuff";
 
 export default function Router() {
   return (
@@ -17,7 +16,6 @@ export default function Router() {
       <Route path="about" element={<About />} />
       <Route path="other-services" element={<OtherServices />} />
       <Route path="contact" element={<Contact />} />
-      <Route path="deep-stuff" element={<DeepStuff />} />
       <Route path="terms-and-conditions" element={<TermsAndConditions />} />
       <Route path="privacy-policy" element={<PrivacyPolicy />} />
       <Route
