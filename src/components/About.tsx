@@ -24,8 +24,13 @@ export default function About() {
             It's really nice to meet you. My name is Jacob Hewitson and I am a
             software engineer. I recently finished a contract working with{" "}
             <a href="http://www.familysearch.org">FamilySearch</a>, a
-            Genealogical Organization. Here you can get to know a little more
-            about me!
+            Genealogical Organization. On this page you can get to know a little
+            bit about me! If you're interested in working with me, here is a
+            link to my resume at{" "}
+            <a href="http://www.jacobhewitsonresume.com">
+              jacobhewitsonresume.com
+            </a>
+            .
           </p>
         </div>
         <section>

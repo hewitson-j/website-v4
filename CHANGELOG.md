@@ -1,5 +1,8 @@
 # Website v4 Changelog
 
+## 4.7.12 12/13/24
+Added link to aws resume
+
 ## 4.7.11 12/10/24
 Removed deep stuff.
 
