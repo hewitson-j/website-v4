@@ -1,12 +1,9 @@
-import { Link, useNavigate } from "react-router-dom";
-import CapitolProfile from "../images/Capitol Profile Pic.jpg";
+import { useNavigate } from "react-router-dom";
 import "./Home.css";
 import Copyright from "./Copyright";
 import PageHelmet from "./utils/PageHelmet";
 
 export default function Home() {
-  const navigate = useNavigate();
-
   return (
     <>
       <div className="home white-background">
@@ -24,26 +21,29 @@ export default function Home() {
               <br />
               Let's see what I can do for you.
             </h2>
-            <br />
-            <br />
-            <Link to={"projects"} className="home-project-link" role="button">
-              <button className="buttons">See Projects</button>
-            </Link>
           </div>
-          <div className="home-pic">
-            <img
-              id="profile-pic"
-              src={CapitolProfile}
-              alt="Jacob's Profile Picture"
-              title="About Me"
-              onClick={() => {
-                navigate("/about");
-              }}
-            />
+          <div className="home-nav-buttons">
+            <HomeNavButton path="/projects">See Projects</HomeNavButton>
+            <HomeNavButton path="/contact">Contact Me</HomeNavButton>
+            <HomeNavButton path="/about">About Me</HomeNavButton>
           </div>
         </div>
       </div>
       <Copyright margin="auto" />
     </>
+  );
+}
+
+interface HomeNavButtonProps {
+  children: string;
+  path: string;
+}
+
+function HomeNavButton({ children, path }: HomeNavButtonProps) {
+  const navigate = useNavigate();
+  return (
+    <button className="home-nav-button buttons" onClick={() => navigate(path)}>
+      {children}
+    </button>
   );
 }
