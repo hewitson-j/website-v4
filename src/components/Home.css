@@ -15,10 +15,15 @@
   width: 50%;
 }
 
-.home-project-link button {
-  margin: 0 3rem;
-  font-weight: bold;
-  letter-spacing: 1px;
+.home-nav-buttons {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.home-nav-button {
+  margin: 1rem;
+  min-width: 300px;
 }
 
 .home-description {
@@ -36,19 +41,6 @@
 #home-emphasis-text {
   color: gold;
   animation: colorCycle 7s infinite;
-}
-
-#profile-pic {
-  width: 70%;
-  max-width: 645px;
-  border-radius: 500px;
-  margin: auto;
-  transition-duration: 0.3s;
-}
-
-#profile-pic:hover {
-  transform: scale(1.05);
-  cursor: pointer;
 }
 
 @keyframes colorCycle {

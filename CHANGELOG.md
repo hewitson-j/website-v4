@@ -1,5 +1,8 @@
 # Website v4 Changelog
 
+## 4.7.13 12/16/24
+Removed home image, replaced with buttons
+
 ## 4.7.12 12/13/24
 Added link to aws resume
 
