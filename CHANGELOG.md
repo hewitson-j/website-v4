@@ -1,5 +1,8 @@
 # Website v4 Changelog
 
+## 4.7.14 12/16/24
+Updated dependencies
+
 ## 4.7.13 12/16/24
 Removed home image, replaced with buttons
 
