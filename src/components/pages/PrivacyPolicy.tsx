@@ -1,6 +1,6 @@
 import { useNavigate } from "react-router-dom";
-import PageHelmet from "./utils/PageHelmet";
-import PageTitle from "./utils/PageTitle";
+import PageHelmet from "../utils/PageHelmet";
+import PageTitle from "../utils/PageTitle";
 
 export default function PrivacyPolicy() {
   const navigate = useNavigate();

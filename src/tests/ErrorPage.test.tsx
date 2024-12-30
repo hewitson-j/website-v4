@@ -1,6 +1,6 @@
 import { render, screen } from "@testing-library/react";
 import { MemoryRouter } from "react-router-dom";
-import ErrorPage from "../components/ErrorPage";
+import ErrorPage from "../components/pages/ErrorPage";
 
 const MockErrorComponent = () => {
   return (

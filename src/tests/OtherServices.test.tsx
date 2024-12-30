@@ -1,5 +1,5 @@
 import { render, screen } from "@testing-library/react";
-import OtherServices from "../components/OtherServices";
+import OtherServices from "../components/pages/OtherServices";
 import { MemoryRouter } from "react-router-dom";
 
 const MockOtherServicesComponent = () => {

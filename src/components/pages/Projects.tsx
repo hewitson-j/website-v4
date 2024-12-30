@@ -1,16 +1,16 @@
 import { Grid } from "@mui/material";
 import "./Projects.css";
-import Card from "./Card";
+import Card from "../Card";
 import {
   portfolioProjectEntries,
   professionalProjectEntries,
   allProjectEntries,
   featuredProjects,
-} from "./ProjectEntries";
-import Copyright from "./Copyright";
+} from "../ProjectEntries";
+import Copyright from "../Copyright";
 import { useState } from "react";
-import SortHeader from "./utils/SortHeader";
-import PageHelmet from "./utils/PageHelmet";
+import SortHeader from "../utils/SortHeader";
+import PageHelmet from "../utils/PageHelmet";
 
 export default function Projects() {
   const projectsArray = [

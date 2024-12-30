@@ -1,12 +1,12 @@
 import { Route, Routes } from "react-router-dom";
-import Home from "./Home";
-import Projects from "./Projects";
-import Contact from "./Contact";
-import ErrorPage from "./ErrorPage";
-import OtherServices from "./OtherServices";
-import TermsAndConditions from "./TermsAndConditions";
-import PrivacyPolicy from "./PrivacyPolicy";
-import About from "./About";
+import Home from "./pages/Home";
+import Projects from "./pages/Projects";
+import Contact from "./pages/Contact";
+import ErrorPage from "./pages/ErrorPage";
+import OtherServices from "./pages/OtherServices";
+import TermsAndConditions from "./pages/TermsAndConditions";
+import PrivacyPolicy from "./pages/PrivacyPolicy";
+import About from "./pages/About";
 
 export default function Router() {
   return (
