@@ -1,8 +1,8 @@
 import { Link } from "react-router-dom";
-import Copyright from "./Copyright";
+import Copyright from "../Copyright";
 import "./OtherServices.css";
-import PageTitle from "./utils/PageTitle";
-import PageHelmet from "./utils/PageHelmet";
+import PageTitle from "../utils/PageTitle";
+import PageHelmet from "../utils/PageHelmet";
 
 export default function OtherServices() {
   return (

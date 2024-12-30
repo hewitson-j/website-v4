@@ -1,10 +1,10 @@
 import emailjs from "emailjs-com";
 import "./Contact.css";
 import { FormEvent, useState } from "react";
-import EmailDialogue from "./EmailDialogue";
-import Copyright from "./Copyright";
-import PageTitle from "./utils/PageTitle";
-import PageHelmet from "./utils/PageHelmet";
+import EmailDialogue from "../EmailDialogue";
+import Copyright from "../Copyright";
+import PageTitle from "../utils/PageTitle";
+import PageHelmet from "../utils/PageHelmet";
 
 emailjs.init("service_usm4a2p");
 

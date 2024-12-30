@@ -1,7 +1,7 @@
 import { useNavigate } from "react-router-dom";
 import "./Home.css";
-import Copyright from "./Copyright";
-import PageHelmet from "./utils/PageHelmet";
+import Copyright from "../Copyright";
+import PageHelmet from "../utils/PageHelmet";
 
 export default function Home() {
   return (

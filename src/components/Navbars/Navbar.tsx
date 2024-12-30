@@ -3,59 +3,32 @@ import GitHubIcon from "@mui/icons-material/GitHub";
 import FacebookIcon from "@mui/icons-material/Facebook";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import InstagramIcon from "@mui/icons-material/Instagram";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import "./Navbar.css";
+import { ReactNode } from "react";
 
 export default function Navbar() {
   return (
     <nav className="navbar">
       <div className="icons">
-        <Link title="Contact Page" to={"contact"} role="button">
-          <EmailIcon
-            className="icon"
-            sx={{ color: "white", fontSize: "2rem" }}
-          />
-        </Link>
-        <a
-          href="https://www.linkedin.com/in/jacob-hewitson-18b93321a/"
-          target="_blank"
-          title="LinkedIn Profile"
+        <IconLink path="/contact">
+          <EmailIcon />
+        </IconLink>
+        <IconLink
+          path="https://www.linkedin.com/in/jacob-hewitson-18b93321a/"
+          isExternal
         >
-          <LinkedInIcon
-            className="icon"
-            sx={{ color: "white", fontSize: "2rem" }}
-          />
-        </a>
-        <a
-          href="https://github.com/hewitson-j"
-          target="_blank"
-          title="GitHub Profile"
-        >
-          <GitHubIcon
-            className="icon"
-            sx={{ color: "white", fontSize: "2rem" }}
-          />
-        </a>
-        <a
-          href="https://www.facebook.com/jake.hewitson.31"
-          target="_blank"
-          title="Facebook Profile"
-        >
-          <FacebookIcon
-            className="icon"
-            sx={{ color: "white", fontSize: "2rem" }}
-          />
-        </a>
-        <a
-          href="https://www.instagram.com/the_man_hewi/"
-          target="_blank"
-          title="Instagram Profile"
-        >
-          <InstagramIcon
-            className="icon"
-            sx={{ color: "white", fontSize: "2rem" }}
-          />
-        </a>
+          <LinkedInIcon />
+        </IconLink>
+        <IconLink path="https://github.com/hewitson-j" isExternal>
+          <GitHubIcon />
+        </IconLink>
+        <IconLink path="https://www.facebook.com/jake.hewitson.31" isExternal>
+          <FacebookIcon />
+        </IconLink>
+        <IconLink path="https://www.instagram.com/the_man_hewi/" isExternal>
+          <InstagramIcon />
+        </IconLink>
       </div>
       <div className="links">
         <Link to={"/"} className="nav-links" role="button">
@@ -72,5 +45,24 @@ export default function Navbar() {
         </Link>
       </div>
     </nav>
+  );
+}
+
+interface IconLinkProps {
+  path: string;
+  children: ReactNode;
+  isExternal?: boolean;
+}
+
+function IconLink({ path, children, isExternal }: IconLinkProps) {
+  const navigate = useNavigate();
+
+  const handleClick = () =>
+    isExternal ? window.open(path, "_blank") : navigate(path);
+
+  return (
+    <div className="icon" onClick={handleClick}>
+      {children}
+    </div>
   );
 }

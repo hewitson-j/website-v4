@@ -1,6 +1,6 @@
 import { useNavigate } from "react-router-dom";
 import "./ErrorPage.css";
-import PageHelmet from "./utils/PageHelmet";
+import PageHelmet from "../utils/PageHelmet";
 
 interface ErrorPageProps {
   title?: string;

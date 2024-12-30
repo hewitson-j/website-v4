@@ -1,9 +1,9 @@
 import "./About.css";
-import profilePic from "../images/Capitol Profile Pic.jpg";
+import profilePic from "../../images/Capitol Profile Pic.jpg";
 import { Link, useNavigate } from "react-router-dom";
-import Copyright from "./Copyright";
-import PageTitle from "./utils/PageTitle";
-import PageHelmet from "./utils/PageHelmet";
+import Copyright from "../Copyright";
+import PageTitle from "../utils/PageTitle";
+import PageHelmet from "../utils/PageHelmet";
 
 export default function About() {
   const navigate = useNavigate();

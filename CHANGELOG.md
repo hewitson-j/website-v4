@@ -1,6 +1,9 @@
 # Website v4 Changelog
 
-## 4.7.14 12/16/24
+## 4.7.15 12/29/24
+Fixed icon animation jumping issue, moved pages to page folder
+
+## 4.7.14 12/28/24
 Updated dependencies
 
 ## 4.7.13 12/16/24
