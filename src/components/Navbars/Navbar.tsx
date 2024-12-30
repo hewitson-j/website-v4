@@ -17,16 +17,29 @@ export default function Navbar() {
         <IconLink
           path="https://www.linkedin.com/in/jacob-hewitson-18b93321a/"
           isExternal
+          title="LinkedIn"
         >
           <LinkedInIcon />
         </IconLink>
-        <IconLink path="https://github.com/hewitson-j" isExternal>
+        <IconLink
+          path="https://github.com/hewitson-j"
+          isExternal
+          title="GitHub"
+        >
           <GitHubIcon />
         </IconLink>
-        <IconLink path="https://www.facebook.com/jake.hewitson.31" isExternal>
+        <IconLink
+          path="https://www.facebook.com/jake.hewitson.31"
+          isExternal
+          title="Facebook"
+        >
           <FacebookIcon />
         </IconLink>
-        <IconLink path="https://www.instagram.com/the_man_hewi/" isExternal>
+        <IconLink
+          path="https://www.instagram.com/the_man_hewi/"
+          isExternal
+          title="Instagram"
+        >
           <InstagramIcon />
         </IconLink>
       </div>
@@ -52,16 +65,17 @@ interface IconLinkProps {
   path: string;
   children: ReactNode;
   isExternal?: boolean;
+  title?: string;
 }
 
-function IconLink({ path, children, isExternal }: IconLinkProps) {
+function IconLink({ path, children, isExternal, title }: IconLinkProps) {
   const navigate = useNavigate();
 
   const handleClick = () =>
     isExternal ? window.open(path, "_blank") : navigate(path);
 
   return (
-    <div className="icon" onClick={handleClick}>
+    <div className="icon" onClick={handleClick} title={title}>
       {children}
     </div>
   );
