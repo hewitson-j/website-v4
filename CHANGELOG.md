@@ -1,5 +1,8 @@
 # Website v4 Changelog
 
+## 4.7.17 1/16/25
+Refactored projectEntries, added new entries.
+
 ## 4.7.16 12/29/24
 Added missing title for navlinks
 

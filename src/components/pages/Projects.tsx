@@ -44,7 +44,7 @@ export default function Projects() {
                   title={entry.title}
                   description={entry.description}
                   github={entry.github}
-                  link={entry.link}
+                  link={entry.link || undefined}
                   alt={
                     entry.image ? entry.alt : `Default Image for ${entry.title}`
                   }
