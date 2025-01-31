@@ -27,7 +27,7 @@ export default function About() {
             Genealogical Organization. On this page you can get to know a little
             bit about me! If you're interested in working with me, here is a
             link to my resume at{" "}
-            <a href="http://www.jacobhewitsonresume.com">
+            <a href="http://www.jacobhewitsonresume.com" target="_blank">
               jacobhewitsonresume.com
             </a>
             .

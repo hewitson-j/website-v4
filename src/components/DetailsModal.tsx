@@ -20,6 +20,7 @@ import typescriptImage from "../images/TypeScript.png";
 import githubImage from "../images/github.png";
 import postgresImage from "../images/postgres.png";
 import supabaseImage from "../images/supabase.png";
+import awsImage from "../images/AWS.png";
 
 import "./DetailsModal.css";
 import { Button, Grid } from "@mui/material";
@@ -88,6 +89,8 @@ export default function DetailsModal({
         return postgresImage;
       case "supabase":
         return supabaseImage;
+      case "aws":
+        return awsImage;
       default:
         return;
     }

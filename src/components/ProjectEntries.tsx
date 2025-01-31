@@ -174,9 +174,23 @@ const reactNativeCalculator: ProjectEntry = {
   github: "https://github.com/hewitson-j/react-native-calculator",
 };
 
+const cloudResumeChallenge: ProjectEntry = {
+  id: "10",
+  title: "AWS Cloud Resume",
+  description:
+    "A serverless, full-stack resume website as part of the AWS Cloud Resume Challenge. Leveraged AWS services such as S3, CloudFront, Lambda, API Gateway, DynamoDB, and IAM to create a scalable and cost-efficient solution.",
+  longDescription:
+    "As part of the AWS Cloud Resume Challenge, I developed a serverless, full-stack resume website to showcase my skills in cloud architecture and DevOps. The project involved hosting a static frontend on Amazon S3, distributing content via CloudFront, and implementing a backend using AWS Lambda, API Gateway, and DynamoDB to track visitor count. I managed security and permissions with IAM, configured CI/CD pipelines using GitHub Actions, and deployed infrastructure using Terraform for automation and reproducibility. This project deepened my understanding of AWS services, serverless architecture, and best practices in cloud development.",
+  technologies: ["javascript", "css", "html", "aws"],
+  image: "/CloudResume.png",
+  alt: "Cloud Resume Image",
+  link: "http://jacobhewitsonresume.com",
+  github: "https://github.com/hewitson-j/react-native-calculator",
+};
+
 export const featuredProjects = [
+  cloudResumeChallenge,
   caseNotesApp,
-  pokedexClone,
   leapsAndBoundsPreschool,
   javaInventoryTracker,
   reactNativeCalculator,
@@ -184,6 +198,7 @@ export const featuredProjects = [
 
 export const allProjectEntries = [
   caseNotesApp,
+  cloudResumeChallenge,
   leapsAndBoundsPreschool,
   mineGrinderWebsite,
   todoApp,
@@ -196,6 +211,7 @@ export const allProjectEntries = [
 ];
 
 export const professionalProjectEntries = [
+  cloudResumeChallenge,
   leapsAndBoundsPreschool,
   mineGrinderWebsite,
   caseNotesApp,
@@ -204,6 +220,7 @@ export const professionalProjectEntries = [
 ];
 
 export const portfolioProjectEntries = [
+  cloudResumeChallenge,
   pokedexClone,
   memoryLibrary,
   reactCalculator,
