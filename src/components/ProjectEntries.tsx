@@ -188,12 +188,25 @@ const cloudResumeChallenge: ProjectEntry = {
   github: "https://github.com/hewitson-j/react-native-calculator",
 };
 
+const movieApp: ProjectEntry = {
+  id: "11",
+  title: "Movie App",
+  description:
+    "A full-stack movie and TV show recommendation app using React, Vite, and TypeScript (frontend) and Node.js with Express (backend). Integrated TMDb API, with caching, rate limiting, and secure CORS setup. Deployed frontend on GitHub Pages and backend on Heroku.",
+  longDescription:
+    "Built a responsive movie and TV recommendation app using React, Vite, and TypeScript for the frontend, and Node.js with Express for the backend. Integrated with TMDb API for real-time data. Backend features include caching (NodeCache), rate limiting, and secure CORS. Frontend deployed on GitHub Pages, backend on Heroku, demonstrating full-stack development and deployment skills.",
+  technologies: ["react", "Typescript", "javascript", "nodejs"],
+  image: "/MovieApp.png",
+  alt: "Movie App Image",
+  link: "http://hewitson-j.github.io/movie-app-frontend",
+  github: "https://github.com/hewitson-j/movie-API",
+};
+
 export const featuredProjects = [
+  movieApp,
   cloudResumeChallenge,
-  caseNotesApp,
   leapsAndBoundsPreschool,
   javaInventoryTracker,
-  reactNativeCalculator,
 ];
 
 export const allProjectEntries = [

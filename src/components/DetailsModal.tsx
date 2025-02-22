@@ -21,6 +21,7 @@ import githubImage from "../images/github.png";
 import postgresImage from "../images/postgres.png";
 import supabaseImage from "../images/supabase.png";
 import awsImage from "../images/AWS.png";
+import nodeJs from "../images/nodejs.png";
 
 import "./DetailsModal.css";
 import { Button, Grid } from "@mui/material";
@@ -91,6 +92,8 @@ export default function DetailsModal({
         return supabaseImage;
       case "aws":
         return awsImage;
+      case "nodejs":
+        return nodeJs;
       default:
         return;
     }
