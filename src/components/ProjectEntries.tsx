@@ -221,9 +221,11 @@ export const allProjectEntries = [
   javaAppointmentTracker,
   javaInventoryTracker,
   reactNativeCalculator,
+  movieApp,
 ];
 
 export const professionalProjectEntries = [
+  movieApp,
   cloudResumeChallenge,
   leapsAndBoundsPreschool,
   mineGrinderWebsite,
@@ -233,6 +235,7 @@ export const professionalProjectEntries = [
 ];
 
 export const portfolioProjectEntries = [
+  movieApp,
   cloudResumeChallenge,
   pokedexClone,
   memoryLibrary,
