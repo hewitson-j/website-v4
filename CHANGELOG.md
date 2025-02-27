@@ -1,7 +1,7 @@
 # Website v4 Changelog
 
 ## 4.7.20 2/27/25
-Added banner for website notifications, added temporary banner in home.
+Added banner for website notifications, added temporary banner in home. Updated website description.
 
 ## 4.7.19 2/22/25
 Added entry about movie app
