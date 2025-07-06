@@ -13,7 +13,7 @@ const MockCopyrightComponent = () => {
 test("renders copyright text", () => {
   render(<MockCopyrightComponent />);
   const copyrightText = screen.getByText(
-    /Website Copyright © Jacob Hewitson 2023/i
+    /Website Copyright © Jacob Hewitson 2025/i
   );
   expect(copyrightText).toBeInTheDocument();
 });

@@ -2,17 +2,10 @@ import { useNavigate } from "react-router-dom";
 import "./Home.css";
 import Copyright from "../Copyright";
 import PageHelmet from "../utils/PageHelmet";
-import Banner from "../Banner";
-import Cookies from "js-cookie";
 
 export default function Home() {
-  const hideBanner = Cookies.get("hideBanner");
-
   return (
     <>
-      {!hideBanner && (
-        <Banner message="Update: A recent domain issue briefly caused an unauthorized site to appear here. This has been fully resolved. Thank you for your patience!" />
-      )}
       <div className="home white-background">
         <PageHelmet title="JacobHewitson.com - Home" />
         <div className="home-main">

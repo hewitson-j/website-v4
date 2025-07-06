@@ -9,7 +9,7 @@ export default function Copyright({ margin }: CopyrightProps) {
   return (
     <div id="copyright-line" style={{ margin: margin }}>
       <hr />
-      <p>Website Copyright © Jacob Hewitson 2023</p>
+      <p>Website Copyright © Jacob Hewitson 2025</p>
       <p>
         <Link to={"/terms-and-conditions"} className="legal-links">
           Terms and Conditions (Updated 4/18/2024)
