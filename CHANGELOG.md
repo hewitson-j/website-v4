@@ -1,5 +1,8 @@
 # Website v4 Changelog
 
+## 4.7.21 8/7/25
+Updated about page content
+
 ## 4.7.21 7/6/25
 Updated copyright, removed temp banner.
 

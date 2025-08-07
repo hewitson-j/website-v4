@@ -22,11 +22,12 @@ export default function About() {
           />
           <p>
             It's really nice to meet you. My name is Jacob Hewitson and I am a
-            software engineer. I recently finished a contract working with{" "}
-            <a href="http://www.familysearch.org">FamilySearch</a>, a
-            Genealogical Organization. On this page you can get to know a little
-            bit about me! If you're interested in working with me, here is a
-            link to my resume at{" "}
+            software engineer. I am a Junior Full-Stack Software Developer at{" "}
+            <a href="https://www.rainfocus.com/" target="_blank">
+              RainFocus
+            </a>
+            . On this page you can get to know a little bit about me! If you're
+            interested in working with me, here is a link to my resume at{" "}
             <a href="http://www.jacobhewitsonresume.com" target="_blank">
               jacobhewitsonresume.com
             </a>
@@ -36,14 +37,18 @@ export default function About() {
         <section>
           <h2>School</h2>
           <p className="paragraphs">
-            I graduated with my Bachelor of Computer Science from Western
-            Governors Univerisity in November, 2022. Below are my credentials
-            and certifications:
+            I graduated with my Masters of Software Engineering in June, 2025
+            and my Bachelor of Computer Science in November, 2022 from Western
+            Governors Univerisity. Below are my credentials and certifications:
           </p>
           <ul className="paragraphs">
             <li>
-              BS of Science, Computer Science from Western Governors University
-              (Graduated Nov. 2022)
+              Masters of Software Engineering from Western Governors University
+              (Graduated June 2025)
+            </li>
+            <li>
+              Bachelors of Computer Science from Western Governors University
+              (Graduated November 2022)
             </li>
             <li>CompTIA Project+ Certification (issued Jun. 2022)</li>
             <li>ITIL v4 Foundations Certificate (issued Jun. 2022)</li>
@@ -52,10 +57,14 @@ export default function About() {
         <section>
           <h2>Work</h2>
           <p className="paragraphs">
-            I recently finished working as a Web Developer Intern for{" "}
-            <a href="http://www.familysearch.org">FamilySearch</a>. I also
-            manage web applications and websites for several organizations and
-            clients such as{" "}
+            I currently work as a Jr. Software Developer at{" "}
+            <a href="https://www.rainfocus.com/" target="_blank">
+              RainFocus
+            </a>
+            . Prior to this, I also worked with{" "}
+            <a href="http://www.familysearch.org">FamilySearch</a>. I also built
+            and manage web applications and websites for several organizations
+            and clients such as{" "}
             <a href="http://leapsandboundsprek.com">
               Leaps and Bounds Preschool, Colorado Springs
             </a>{" "}
