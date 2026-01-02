@@ -2,6 +2,7 @@
 
 ## 4.7.23 1/2/26
 Removed other services page
+Updated dependencies
 
 ## 4.7.22 8/7/25
 Updated about page content
