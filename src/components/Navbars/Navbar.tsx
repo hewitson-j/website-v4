@@ -50,9 +50,6 @@ export default function Navbar() {
         <Link to={"projects"} className="nav-links" role="button">
           Projects
         </Link>
-        <Link to={"other-services"} className="nav-links" role="button">
-          Other Services
-        </Link>
         <Link to={"contact"} className="nav-links" role="button">
           Contact
         </Link>

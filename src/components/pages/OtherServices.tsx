@@ -4,6 +4,9 @@ import "./OtherServices.css";
 import PageTitle from "../utils/PageTitle";
 import PageHelmet from "../utils/PageHelmet";
 
+// Currently I don't have any addt'l services to list, but this page was once used. Keeping in case it should be
+// reused or reactivated for addt'l services
+
 export default function OtherServices() {
   return (
     <>
@@ -17,16 +20,6 @@ export default function OtherServices() {
         </h3>
         <div className="other-services-list">
           <div className="other-services-entries">
-            <h2>Notary Public - Utah, Remote</h2>
-            <p>
-              As a commissioned Notary Public in Utah with authorization to
-              notarize remotely for persons both in an out of the State, I
-              specialize in both in-person and remote notarizations, offering
-              fast, secure services for legal documents, contracts, and real
-              estate transactions. My focus on accuracy, reliability, and
-              confidentiality ensures your notarization needs are met with the
-              highest standards, regardless of your location.
-            </p>
             <Link to={"/contact"}>
               <button className="buttons">Contact</button>
             </Link>

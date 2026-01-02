@@ -3,7 +3,6 @@ import Home from "./pages/Home";
 import Projects from "./pages/Projects";
 import Contact from "./pages/Contact";
 import ErrorPage from "./pages/ErrorPage";
-import OtherServices from "./pages/OtherServices";
 import TermsAndConditions from "./pages/TermsAndConditions";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
 import About from "./pages/About";
@@ -14,7 +13,6 @@ export default function Router() {
       <Route path="/" element={<Home />} />
       <Route path="projects" element={<Projects />} />
       <Route path="about" element={<About />} />
-      <Route path="other-services" element={<OtherServices />} />
       <Route path="contact" element={<Contact />} />
       <Route path="terms-and-conditions" element={<TermsAndConditions />} />
       <Route path="privacy-policy" element={<PrivacyPolicy />} />
